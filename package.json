@@ -8,10 +8,13 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.1.5",
+    "hedron": "^0.7.1",
     "next": "3.2.1",
     "react": "15.6.1",
     "react-dom": "15.6.1",
-    "styled-components": "^2.1.0"
+    "react-headroom": "^2.1.6",
+    "styled-components": "^2.1.0",
+    "styled-normalize": "^2.2.1"
   },
   "license": "ISC"
 }
