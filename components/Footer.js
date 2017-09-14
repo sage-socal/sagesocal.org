@@ -1,11 +1,12 @@
 import { Row, Column } from 'hedron'
 import styled from 'styled-components'
-import { blue } from '../utils/colors'
+import { beige } from '../utils/colors'
+import { shade } from 'polished'
 
 const Content = styled.footer`
 	font-family: 'Avenir', sans-serif;
-	color: ${blue};
-	padding: 60px 0;
+	color: ${shade(0.5, beige)};
+	padding: 40px 0;
 	text-align: center;
 `
 

@@ -1,10 +1,12 @@
-import { Page, Row, Column } from 'hedron'
+import { CASSYPage } from './Containers'
 import Header from './Header'
 import Footer from './Footer'
 
 export default ({ children }) =>
-	<Page width="1200px">
-		<Header />
-		{children}
+	<div>
+		<CASSYPage width="1200px">
+			<Header />
+			{children}
+		</CASSYPage>
 		<Footer />
-	</Page>
+	</div>

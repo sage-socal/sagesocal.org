@@ -2511,6 +2511,10 @@ ncp@~2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ncp/-/ncp-2.0.0.tgz#195a21d6c46e361d2fb1281ba38b91e9df7bdbb3"
 
+next-redirect@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/next-redirect/-/next-redirect-1.0.1.tgz#eb84ba12f5e1d7ee37fed7088d56ea747b4cedf2"
+
 next@3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/next/-/next-3.2.1.tgz#6d694823ac6e74e9be4553117144a6402220490f"
@@ -2891,6 +2895,10 @@ pkg-up@2.0.0:
   resolved "https://registry.yarnpkg.com/pkg-up/-/pkg-up-2.0.0.tgz#c819ac728059a461cab1c3889a2be3c49a004d7f"
   dependencies:
     find-up "^2.1.0"
+
+polished@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/polished/-/polished-1.7.0.tgz#cfc55113f52e9ecec7c84dbd0c708b9a3235d7c3"
 
 postcss-value-parser@^3.3.0:
   version "3.3.0"

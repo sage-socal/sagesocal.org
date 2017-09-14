@@ -1,0 +1,15 @@
+import styled, { css } from 'styled-components'
+import { Page, Row } from 'hedron'
+import * as colors from '../utils/colors'
+
+export const CASSYPage = styled(Page)`
+	background: ${colors.white};
+	box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px 0px;
+`
+
+export const Section = styled(Row)`
+	padding: 20px;
+	text-align: ${props => props.textAlign || 'inherit'};
+`
+
+export const SubSection = styled.div`padding: 30px;`

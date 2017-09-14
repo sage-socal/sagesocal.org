@@ -1,13 +1,14 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 import { injectGlobal, ServerStyleSheet } from 'styled-components'
 import styledNormalize from 'styled-normalize'
-import { light } from '../utils/colors'
+import { beige } from '../utils/colors'
+import { tint } from 'polished'
 
 injectGlobal`
 	${styledNormalize}
 
 	body {
-		background: ${light};
+		background: ${tint(0.65, beige)};
 	}
 
   @font-face {
