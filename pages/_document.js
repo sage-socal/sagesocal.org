@@ -1,14 +1,20 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 import { injectGlobal, ServerStyleSheet } from 'styled-components'
 import styledNormalize from 'styled-normalize'
-import { beige } from '../utils/colors'
+import { beige, blue } from '../utils/colors'
 import { tint } from 'polished'
 
 injectGlobal`
 	${styledNormalize}
 
+	::selection {
+		background: ${tint(0.3, blue)};
+	}
+
 	body {
-		background: ${tint(0.65, beige)};
+		background-color: ${beige};
+		background-image: url('/static/cardboard-flat.png');
+		background-attachment: fixed;
 	}
 
   @font-face {

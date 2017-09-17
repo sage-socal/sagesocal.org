@@ -5,6 +5,7 @@ import * as colors from '../utils/colors'
 export const CASSYPage = styled(Page)`
 	background: ${colors.white};
 	box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px 0px;
+	padding-bottom: 60px;
 `
 
 export const Section = styled(Row)`

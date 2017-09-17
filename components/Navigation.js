@@ -15,14 +15,24 @@ const PageLink = withRouter(styled.a`
 	font-weight: 500;
 	font-family: 'Avenir', Helvetica, sans-serif;
 	font-size: 20px;
-	padding: 15px;
+	margin: 15px;
+	margin-bottom: 0;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
 	color: ${green};
+	border-bottom: ${props => props.active && `3px solid ${green};`};
 `)
 
 const Logo = ({ url }) =>
-	<img width="220" alt="CASSY" draggable="false" src={url} />
+	<img
+		style={{ userSelect: 'none' }}
+		width="220"
+		alt="CASSY"
+		draggable="false"
+		src={url}
+	/>
 
-export default ({ logo, pages }) =>
+export default ({ logo, pages, active }) =>
 	<Header>
 		<Link href="/who" prefetch>
 			<a>
@@ -32,7 +42,7 @@ export default ({ logo, pages }) =>
 		<NavBar>
 			{pages.map(page =>
 				<Link key={page.path} href={page.path} prefetch passHref>
-					<PageLink>
+					<PageLink active={page.path === active}>
 						{page.title}
 					</PageLink>
 				</Link>

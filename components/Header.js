@@ -1,11 +1,12 @@
 import { Row, Column } from 'hedron'
 import Navigation from './Navigation'
 
-export default () =>
+export default ({ page }) =>
 	<Row>
 		<Column>
 			<Navigation
 				logo="/static/logo.svg"
+				active={page}
 				pages={[
 					{ path: 'who', title: 'Who We Are' },
 					{ path: 'what', title: 'What We Do' },

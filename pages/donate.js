@@ -6,7 +6,7 @@ import Donate from '../components/Donate'
 import { LargeHeading, Paragraph } from '../components/Text'
 
 export default () =>
-	<Base>
+	<Base page="donate">
 		<Section>
 			<Column lg={5}>
 				<LargeHeading>Donate to CASSY.</LargeHeading>

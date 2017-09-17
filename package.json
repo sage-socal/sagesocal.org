@@ -14,7 +14,6 @@
 		"polished": "^1.7.0",
 		"react": "15.6.1",
 		"react-dom": "15.6.1",
-		"react-headroom": "^2.1.6",
 		"styled-components": "^2.1.0",
 		"styled-normalize": "^2.2.1"
 	},

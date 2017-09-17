@@ -4,7 +4,7 @@ import { Row, Column } from 'hedron'
 import { LargeHeading, Paragraph } from '../components/Text'
 
 export default () =>
-	<Base>
+	<Base page="what">
 		<Column lg={6}>
 			<LargeHeading>WHAT</LargeHeading>
 		</Column>

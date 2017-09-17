@@ -58,7 +58,7 @@ const OrangeBox = styled.div`
 `
 
 export default () =>
-	<Base>
+	<Base page="who">
 		<MainImageSection>
 			<Column lg={5} lgShift={7}>
 				<FlagSubSection>
@@ -94,11 +94,14 @@ export default () =>
 				</Paragraph>
 			</Column>
 			<Column lg={6}>
-				<FitImage src="/static/images/support.jpg" />
+				<FitImage src="/static/images/kid-help.jpg" />
 			</Column>
 		</Section>
 		<Section>
-			<Column lg={6} lgShift={6}>
+			<Column lg={6}>
+				<FitImage src="/static/images/students-group.jpg" />
+			</Column>
+			<Column lg={6}>
 				<LargeHeading>
 					CASSY Offers Schools a Mental Health Safety Net
 				</LargeHeading>
