@@ -35,4 +35,9 @@ export const Paragraph = styled.p`
 	font-family: 'Avenir', Helvetica, sans-serif;
 	line-height: 1.4;
 	color: #000;
+	margin: 10px 0;
+
+	a {
+		color: inherit;
+	}
 `

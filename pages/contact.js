@@ -24,6 +24,12 @@ const Contact = Paragraph.extend`
 	font-size: ${props => (props.primary ? `22px` : `18px`)};
 `
 
+const CircleImage = FitImage.extend`
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+`
+
 export default () =>
 	<Base page="contact">
 		<Blurb>
@@ -39,7 +45,7 @@ export default () =>
 		</Blurb>
 		<Blurb>
 			<Column lg={2}>
-				<FitImage src="/static/images/liz-schoeben.jpg" />
+				<CircleImage src="/static/images/liz-schoeben.jpg" />
 			</Column>
 			<Column lg={4}>
 				<Person primary>Liz Schoeben, LMFT</Person>
@@ -50,14 +56,20 @@ export default () =>
 			</Column>
 		</Blurb>
 		<Blurb>
-			<Column lg={4}>
+			<Column lg={2}>
+				<CircleImage src="/static/person-placeholder.jpg" />
+			</Column>
+			<Column lg={3}>
 				<Person>TBD, LMFT</Person>
 				<PersonTitle primary>Palos Verdes High</PersonTitle>
 				<Contact>
 					(###) ###-####<br />email@me.com
 				</Contact>
 			</Column>
-			<Column lg={4}>
+			<Column lg={2}>
+				<CircleImage src="/static/person-placeholder.jpg" />
+			</Column>
+			<Column lg={3}>
 				<Person>TBD, LMFT</Person>
 				<PersonTitle primary>Palos Verdes High</PersonTitle>
 				<Contact>
@@ -66,14 +78,20 @@ export default () =>
 			</Column>
 		</Blurb>
 		<Blurb>
-			<Column lg={4}>
+			<Column lg={2}>
+				<CircleImage src="/static/person-placeholder.jpg" />
+			</Column>
+			<Column lg={3}>
 				<Person>TBD, LMFT</Person>
 				<PersonTitle primary>Palos Verdes High</PersonTitle>
 				<Contact>
 					(###) ###-####<br />email@me.com
 				</Contact>
 			</Column>
-			<Column lg={4}>
+			<Column lg={2}>
+				<CircleImage src="/static/person-placeholder.jpg" />
+			</Column>
+			<Column lg={3}>
 				<Person>TBD, LMFT</Person>
 				<PersonTitle primary>Palos Verdes High</PersonTitle>
 				<Contact>

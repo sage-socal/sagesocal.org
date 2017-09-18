@@ -19,7 +19,10 @@ const MainImageSection = Section.extend`
 	background-image: url('/static/images/teenagers.jpg');
 `
 const WhiteLargeHeading = LargeHeading.extend`color: ${white};`
-const WhiteSectionTitle = SectionTitle.extend`color: ${white};`
+const WhiteSectionTitle = SectionTitle.extend`
+	margin-bottom: 20px;
+	color: ${white};
+`
 const WhiteParagraph = Paragraph.extend`color: ${white};`
 const BlueSection = Section.extend`
 	background-color: ${blue};
@@ -128,26 +131,26 @@ export default () =>
 				<WhiteSectionTitle>Introducing CASSY SoCal</WhiteSectionTitle>
 				<WhiteParagraph>
 					CASSY (Counseling and Support Services for Youth) was founded in the
-					SF Bay Area in 2009. The agency continues to do incredible work in the
-					Silicon Valley, providing a year-round mental health safety net for
-					over 33,000 students at 43 schools in East Palo Alto, Los
-					Gatos, Milpitas, Palo Alto, San Jose, Saratoga and Campbell.
+					San Francisco Bay Area in 2009.{' '}
+					<a href="http://cassybayarea.org">The agency</a> continues to do
+					incredible work, providing a year-round mental health safety net for
+					over 33,000 students at 43 schools in San Mateo and Santa Clara
+					County.
 				</WhiteParagraph>
 				<WhiteParagraph>
-					In April 2017, CASSY presented at The First Annual Mental Health
-					Conference held in Sacramento on the topic of “ How to Create
-					School-based Mental Health Partnerships.” Christy Hayes, CASSY’s
-					current Executive Director, led a panel with Liz Schoeben, CASSY’s
-					founder, and Kristi Grasty, principal of Los Gatos High School.
+					In the Fall of 2017, Liz Schoeben, CASSY Co-Founder, decided to take
+					the CASSY concept to Southern California. We have created CASSY
+					Southern California, A Project of The Giving Back Fund.
 				</WhiteParagraph>
 				<WhiteParagraph>
-					Palos Verdes Peninsula Unified School District (PVPUSD) sent staff
-					members to the conference specifically to hear CASSY’s talk and
-					concluded that they desperately needed what CASSY described. Since
-					there were no similar solutions readily available in the marketplace,
-					Liz decided to bring the proven CASSY model to the South Bay and
-					launch a project in Palos Verdes under the fiscal sponsorship of the
-					Giving Back Fund.
+					Building on CASSY’s mission and core principles, CASSY SoCal offers
+					the highest commitment to supporting the social and emotional needs of
+					the youth in the communities in Southern California.
+				</WhiteParagraph>
+				<WhiteParagraph>
+					Our initial partnership is with The Palos Verdes Peninsula Unified
+					School District, providing support at their 10 elementary sites and
+					two comprehensive high schools in the district.
 				</WhiteParagraph>
 			</Column>
 		</BlueSection>
