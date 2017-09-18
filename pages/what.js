@@ -31,7 +31,8 @@ const GradientSection = Section.extend`
 	position: relative;
 	justify-content: center;
 	padding-bottom: 100px;
-	margin-bottom: 0;
+	margin-bottom: -100px;
+	z-index: 1;
 `
 
 export default () =>
@@ -142,7 +143,7 @@ export default () =>
 				<SectionTitle
 					style={{ color: white, marginBottom: 20, textAlign: 'center' }}
 				>
-					Measuring Successs
+					Measuring Success
 				</SectionTitle>
 				<Paragraph style={{ color: white }}>
 					CASSY collaborates with school partners to measure the success of our
@@ -151,7 +152,7 @@ export default () =>
 				</Paragraph>
 			</Column>
 		</GradientSection>
-		<Section style={{ marginTop: 0 }}>
+		<Section style={{ zIndex: 5, marginTop: 0 }}>
 			<Column>
 				<LargeHeading style={{ textAlign: 'center', color: blue }}>
 					Quantitative

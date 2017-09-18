@@ -11,6 +11,7 @@ export const CASSYPage = styled(Page)`
 export const Section = styled(Row)`
 	padding: 20px;
 	text-align: ${props => props.textAlign || 'inherit'};
+	position: relative;
 `
 
 export const SubSection = styled.div`padding: 30px;`

@@ -63,6 +63,10 @@ export default class MyDocument extends Document {
 			<html>
 				<Head>
 					<title>CASSY SoCal</title>
+					<script
+						async
+						src="https://bbox.blackbaudhosting.com/webforms/bbox-min.js"
+					/>
 					{styleTags}
 				</Head>
 				<body>

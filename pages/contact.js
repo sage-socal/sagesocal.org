@@ -21,7 +21,7 @@ const PersonTitle = BodyHeadline.extend`
 
 const Contact = Paragraph.extend`
 	margin: 5px 0;
-	font-size: ${props => (props.primary ? `22px` : `18px`)};
+	font-size: ${props => (props.primary ? `20px` : `18px`)};
 `
 
 const CircleImage = FitImage.extend`
@@ -50,8 +50,8 @@ export default () =>
 			<Column lg={4}>
 				<Person primary>Liz Schoeben, LMFT</Person>
 				<PersonTitle primary>Founder / Regional Director</PersonTitle>
-				<Contact>
-					(650) 799-5266<br />lizschoeben@mac.com
+				<Contact primary>
+					(650) 799-5266<br />lizschoeben@cassysocal.org
 				</Contact>
 			</Column>
 		</Blurb>
@@ -59,22 +59,29 @@ export default () =>
 			<Column lg={2}>
 				<CircleImage src="/static/person-placeholder.jpg" />
 			</Column>
+			<Column lg={4}>
+				<Person primary>Kathi Colli, MFT</Person>
+				<PersonTitle primary>Clinical Supervisor</PersonTitle>
+				<Contact primary>PVPUSD</Contact>
+			</Column>
+		</Blurb>
+
+		<Blurb>
+			<Column lg={2}>
+				<CircleImage src="/static/person-placeholder.jpg" />
+			</Column>
 			<Column lg={3}>
-				<Person>TBD, LMFT</Person>
-				<PersonTitle primary>Palos Verdes High</PersonTitle>
-				<Contact>
-					(###) ###-####<br />email@me.com
-				</Contact>
+				<Person>Barbara Gani, LCSW</Person>
+				<PersonTitle>Student Support Specialist</PersonTitle>
+				<Contact>Peninsula High</Contact>
 			</Column>
 			<Column lg={2}>
 				<CircleImage src="/static/person-placeholder.jpg" />
 			</Column>
 			<Column lg={3}>
-				<Person>TBD, LMFT</Person>
-				<PersonTitle primary>Palos Verdes High</PersonTitle>
-				<Contact>
-					(###) ###-####<br />email@me.com
-				</Contact>
+				<Person>Nancy De La Rosa, MFTi</Person>
+				<PersonTitle>Student Support Specialist</PersonTitle>
+				<Contact>PVHS</Contact>
 			</Column>
 		</Blurb>
 		<Blurb>
@@ -82,21 +89,17 @@ export default () =>
 				<CircleImage src="/static/person-placeholder.jpg" />
 			</Column>
 			<Column lg={3}>
-				<Person>TBD, LMFT</Person>
-				<PersonTitle primary>Palos Verdes High</PersonTitle>
-				<Contact>
-					(###) ###-####<br />email@me.com
-				</Contact>
+				<Person>Cynthia Lopez Herrera, MSW</Person>
+				<PersonTitle>Student Support Specialist</PersonTitle>
+				<Contact>Elementary Sites</Contact>
 			</Column>
 			<Column lg={2}>
 				<CircleImage src="/static/person-placeholder.jpg" />
 			</Column>
 			<Column lg={3}>
-				<Person>TBD, LMFT</Person>
-				<PersonTitle primary>Palos Verdes High</PersonTitle>
-				<Contact>
-					(###) ###-####<br />email@me.com
-				</Contact>
+				<Person>Sarit Fassazadeh, LCSW</Person>
+				<PersonTitle>Student Support Specialist</PersonTitle>
+				<Contact>Elementary Sites</Contact>
 			</Column>
 		</Blurb>
 	</Base>
