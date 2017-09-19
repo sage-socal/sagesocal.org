@@ -25,7 +25,7 @@ const PageLink = withRouter(styled.a`
 
 const Logo = ({ url }) =>
 	<img
-		style={{ userSelect: 'none' }}
+		style={{ maxWidth: '50vw', userSelect: 'none' }}
 		width="220"
 		alt="CASSY"
 		draggable="false"

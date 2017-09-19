@@ -6,7 +6,6 @@ import { Section } from '../components/Containers'
 import styled from 'styled-components'
 import { blue, stone } from '../utils/colors'
 import Map from '../components/Map'
-import Head from 'next/head'
 
 const School = styled.div``
 const CenterSection = Section.extend`justify-content: center;`
@@ -18,9 +17,6 @@ const Address = Paragraph.extend`
 
 export default () =>
 	<Base page="where">
-		<Head>
-			<title>CASSY SoCal / Where We Do It</title>
-		</Head>
 		<Map />
 		<CenterSection>
 			<Column>

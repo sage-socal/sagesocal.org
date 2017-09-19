@@ -6,7 +6,6 @@ import { Section } from '../components/Containers'
 import { LargeHeading, Paragraph, BodyHeadline } from '../components/Text'
 import { blue, stone } from '../utils/colors'
 import { tint } from 'polished'
-import Head from 'next/head'
 
 const Blurb = Section.extend`justify-content: center;`
 
@@ -33,9 +32,6 @@ const CircleImage = FitImage.extend`
 
 export default () =>
 	<Base page="contact">
-		<Head>
-			<title>CASSY SoCal / Contact</title>
-		</Head>
 		<Blurb>
 			<Column lg={8}>
 				<LargeHeading>Contact us.</LargeHeading>

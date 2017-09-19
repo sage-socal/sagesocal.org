@@ -11,7 +11,6 @@ import {
 } from '../components/Text'
 import { orange, green, blue, white, stone } from '../utils/colors'
 import styled from 'styled-components'
-import Head from 'next/head'
 
 const MainImageSection = Section.extend`
 	background-size: cover;
@@ -28,7 +27,7 @@ const CenterSection = Section.extend`justify-content: center;`
 const ServiceTitle = BodyHeadline.extend`color: ${blue};`
 const Service = styled.div`margin: 20px 0;`
 const GradientSection = Section.extend`
-	background: linear-gradient(${green} 0%, ${white} 100%);
+	background: linear-gradient(${green} 0%, ${white} 95%);
 	position: relative;
 	justify-content: center;
 	padding-bottom: 100px;
@@ -38,9 +37,6 @@ const GradientSection = Section.extend`
 
 export default () =>
 	<Base page="what">
-		<Head>
-			<title>CASSY SoCal / What We Do</title>
-		</Head>
 		<MainImageSection />
 		<CenterSection>
 			<Column lg={10}>
@@ -149,9 +145,9 @@ export default () =>
 				>
 					Measuring Success
 				</SectionTitle>
-				<Paragraph style={{ textAlign: 'center', fontSize: 22, color: white }}>
+				<Paragraph style={{ color: white }}>
 					CASSY collaborates with school partners to measure the success of our
-					services. We use a mix of the following quantitative and qualitative
+					services.  We use a mix of the following quantitative and qualitative
 					tools and metrics to measure the efficacy of our programs:
 				</Paragraph>
 			</Column>

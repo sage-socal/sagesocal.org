@@ -19,7 +19,7 @@ export default class Doante extends Component {
 
 	render() {
 		return (
-			<div ref={el => (this.instance = el)}>
+			<div id="" ref={el => (this.instance = el)}>
 				<div id="bbox-root" />
 			</div>
 		)

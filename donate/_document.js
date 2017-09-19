@@ -63,9 +63,9 @@ export default class MyDocument extends Document {
 			<html>
 				<Head>
 					<title>CASSY SoCal</title>
-					<meta
-						name="viewport"
-						content="initial-scale=1.0, width=device-width"
+					<script
+						async
+						src="https://bbox.blackbaudhosting.com/webforms/bbox-min.js"
 					/>
 					{styleTags}
 				</Head>

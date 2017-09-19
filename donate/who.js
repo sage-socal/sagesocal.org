@@ -13,7 +13,6 @@ import { FitImage } from '../components/Media'
 import { orange, green, blue, white, beige } from '../utils/colors'
 import styled from 'styled-components'
 import { tint } from 'polished'
-import Head from 'next/head'
 
 const MainImageSection = Section.extend`
 	background-size: cover;
@@ -63,9 +62,6 @@ const OrangeBox = styled.div`
 
 export default () =>
 	<Base page="who">
-		<Head>
-			<title>CASSY SoCal / Who We Are</title>
-		</Head>
 		<MainImageSection>
 			<Column lg={5} lgShift={7}>
 				<FlagSubSection>
@@ -113,23 +109,20 @@ export default () =>
 					CASSY Offers Schools a Mental Health Safety Net
 				</LargeHeading>
 				<Paragraph>
-					We partner with schools to provide professional mental health services
-					to students in their academic setting. Our therapists are conveniently
-					located right on campus. All services are free to the student and
-					their parents. With CASSY, there are no cost, transportation, or
-					insurance barriers to prevent students from getting the help they
-					need. CASSY has proven that when you put highly qualified postgraduate
-					therapists on the school campus, students will come in and get help.
-					In fact, 20-25% of the entire student body will come in. Some once or
-					twice. Some every week for years. Being school-based is absolutely the
-					key.
+					In a given year, 20% of young people experience mental health issues
+					such as depression, anxiety, eating disorders, academic stress, low
+					self-esteem, and substance abuse. Unfortunately, the vast majority of
+					these kids do not receive the treatment they need. Left untreated,
+					many teens contemplate suicide, the third leading cause of death for
+					young people today.
 				</Paragraph>
 				<Paragraph>
-					By removing the social and emotional obstacles that make it difficult
-					to focus on academics, we give young people a chance to get the most
-					out of the educational opportunities that are provided to them. When
-					we improve students’ social and emotional wellbeing, academic
-					achievement tends to follow.
+					The good news is that quality treatment can help. The challenge,
+					however, is connecting these kids with the treatment they need.
+					Families often find it difficult to find and pay for qualified
+					professionals, let alone getting these kids to the therapist’s office.
+					Studies show that students are far more likely to seek counseling when
+					it is available at their school, especially if it is free.
 				</Paragraph>
 			</Column>
 		</Section>

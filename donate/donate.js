@@ -4,13 +4,9 @@ import { Column } from 'hedron'
 import { Section } from '../components/Containers'
 import Donate from '../components/Donate'
 import { LargeHeading, Paragraph } from '../components/Text'
-import Head from 'next/head'
 
 export default () =>
 	<Base page="donate">
-		<Head>
-			<title>CASSY SoCal / Donate</title>
-		</Head>
 		<Section>
 			<Column lg={5}>
 				<LargeHeading>Thank you for supporting CASSY!</LargeHeading>
