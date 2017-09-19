@@ -1,6 +1,6 @@
 module.exports = {
 	exportPathMap: () => ({
-		'/': { page: '/' },
+		'/': { page: '/who' },
 		'/who': { page: '/who' },
 		'/what': { page: '/what' },
 		'/where': { page: '/where' },

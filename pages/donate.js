@@ -15,10 +15,10 @@ export default () =>
 			<Column lg={5}>
 				<LargeHeading>Thank you for supporting CASSY!</LargeHeading>
 				<Paragraph>
-					Please support CASSY today as we work in partnership with our schools,
-					communities, and supporters like you to ensure all students have
-					access to mental health support when they need it. You are our best
-					partner in ensuring our children have access to the mental health
+					Please support CASSY SoCal today as we work in partnership with our
+					schools, communities, and supporters like you to ensure all students
+					have access to mental health support when they need it. You are our
+					best partner in ensuring our children have access to the mental health
 					support and services they need to cope and be successful in school and
 					life!
 				</Paragraph>

@@ -42,7 +42,7 @@ export default ({ logo, pages, active }) =>
 		<NavBar>
 			{pages.map(page =>
 				<Link key={page.path} href={page.path} prefetch passHref>
-					<PageLink active={page.path === active}>
+					<PageLink active={page.path === '/' + active}>
 						{page.title}
 					</PageLink>
 				</Link>

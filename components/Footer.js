@@ -14,7 +14,7 @@ export default () =>
 	<Row>
 		<Column>
 			<Content>
-				Copyright &copy; 2017, CASSY SoCal, a project of the Giving Back Fund
+				&copy; 2017, CASSY SoCal, a project of the Giving Back Fund
 			</Content>
 		</Column>
 	</Row>

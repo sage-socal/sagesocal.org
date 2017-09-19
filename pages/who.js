@@ -10,7 +10,7 @@ import {
 	Paragraph
 } from '../components/Text'
 import { FitImage } from '../components/Media'
-import { orange, green, blue, white, beige } from '../utils/colors'
+import { orange, green, blue, white, beige, stone } from '../utils/colors'
 import styled from 'styled-components'
 import { tint } from 'polished'
 import Head from 'next/head'
@@ -59,6 +59,13 @@ const OrangeBox = styled.div`
 	background: ${tint(0.25, orange)};
 	border-radius: 20px;
 	border: 3px ${orange} solid;
+`
+const Number = styled.h3`
+	color: ${tint(0.2, stone)};
+	text-align: right;
+	font-size: 48px;
+	font-family: 'Avenir', Helvetica, sans-serif;
+	margin: 0;
 `
 
 export default () =>
@@ -174,7 +181,7 @@ export default () =>
 		</Section>
 		<PrincipleSection>
 			<Column lg={2}>
-				<OrangeBox />
+				<Number>#1</Number>
 			</Column>
 			<Column lg={8}>
 				<BodyHeadline>
@@ -191,7 +198,7 @@ export default () =>
 		</PrincipleSection>
 		<PrincipleSection>
 			<Column lg={2}>
-				<OrangeBox />
+				<Number>#2</Number>
 			</Column>
 			<Column lg={8}>
 				<BodyHeadline>
@@ -210,7 +217,7 @@ export default () =>
 		</PrincipleSection>
 		<PrincipleSection>
 			<Column lg={2}>
-				<OrangeBox />
+				<Number>#3</Number>
 			</Column>
 			<Column lg={8}>
 				<BodyHeadline>
@@ -228,7 +235,7 @@ export default () =>
 		</PrincipleSection>
 		<PrincipleSection>
 			<Column lg={2}>
-				<OrangeBox />
+				<Number>#4</Number>
 			</Column>
 			<Column lg={8}>
 				<BodyHeadline>
@@ -246,7 +253,7 @@ export default () =>
 		</PrincipleSection>
 		<PrincipleSection>
 			<Column lg={2}>
-				<OrangeBox />
+				<Number>#5</Number>
 			</Column>
 			<Column lg={8}>
 				<BodyHeadline>Commit to making a difference.</BodyHeadline>

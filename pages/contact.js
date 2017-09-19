@@ -52,8 +52,8 @@ export default () =>
 				<CircleImage src="/static/images/liz-schoeben.jpg" />
 			</Column>
 			<Column lg={4}>
-				<Person primary>Liz Schoeben, LMFT</Person>
-				<PersonTitle primary>Founder / Regional Director</PersonTitle>
+				<Person primary>Liz Schoeben, MFT</Person>
+				<PersonTitle primary>Executive Director</PersonTitle>
 				<Contact primary>
 					(650) 799-5266<br />lizschoeben@cassysocal.org
 				</Contact>
@@ -66,7 +66,9 @@ export default () =>
 			<Column lg={4}>
 				<Person primary>Kathi Colli, MFT</Person>
 				<PersonTitle primary>Clinical Supervisor</PersonTitle>
-				<Contact primary>PVPUSD</Contact>
+				<Contact primary>
+					(424) 262-0896<br />collik@pvpusd.net
+				</Contact>
 			</Column>
 		</Blurb>
 
@@ -76,16 +78,18 @@ export default () =>
 			</Column>
 			<Column lg={3}>
 				<Person>Barbara Gani, LCSW</Person>
-				<PersonTitle>Student Support Specialist</PersonTitle>
-				<Contact>Peninsula High</Contact>
+				<PersonTitle>Student Support Specialist at Peninsula High</PersonTitle>
+				<Contact>ganib@pvpusd.net</Contact>
 			</Column>
 			<Column lg={2}>
 				<CircleImage src="/static/person-placeholder.jpg" />
 			</Column>
 			<Column lg={3}>
 				<Person>Nancy De La Rosa, MFTi</Person>
-				<PersonTitle>Student Support Specialist</PersonTitle>
-				<Contact>PVHS</Contact>
+				<PersonTitle>
+					Student Support Specialist at Palos Verdes High School
+				</PersonTitle>
+				<Contact>delarosan@pvpusd.net</Contact>
 			</Column>
 		</Blurb>
 		<Blurb>
@@ -94,16 +98,18 @@ export default () =>
 			</Column>
 			<Column lg={3}>
 				<Person>Cynthia Lopez Herrera, MSW</Person>
-				<PersonTitle>Student Support Specialist</PersonTitle>
-				<Contact>Elementary Sites</Contact>
+				<PersonTitle>Elementary Student Support Specialist</PersonTitle>
+				<Contact>lopezcy@pvpusd.net</Contact>
 			</Column>
 			<Column lg={2}>
 				<CircleImage src="/static/person-placeholder.jpg" />
 			</Column>
 			<Column lg={3}>
 				<Person>Sarit Fassazadeh, LCSW</Person>
-				<PersonTitle>Student Support Specialist</PersonTitle>
-				<Contact>Elementary Sites</Contact>
+				<PersonTitle>Elementary Student Support Specialist</PersonTitle>
+				<Contact>
+					(818) 724-9431<br />fassazadehs@pvpusd.net
+				</Contact>
 			</Column>
 		</Blurb>
 	</Base>
