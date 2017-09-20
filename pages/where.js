@@ -28,7 +28,7 @@ export default () =>
 					High Schools
 				</LargeHeading>
 			</Column>
-			<Column lg={4}>
+			<Column md={6} lg={4}>
 				<School>
 					<SchoolName>Palos Verdes High School</SchoolName>
 					<Address>
@@ -36,7 +36,7 @@ export default () =>
 					</Address>
 				</School>
 			</Column>
-			<Column lg={4}>
+			<Column md={6} lg={4}>
 				<School>
 					<SchoolName>
 						Palos Verdes Peninsula<br />High School
@@ -53,7 +53,7 @@ export default () =>
 					Elementary Schools
 				</LargeHeading>
 			</Column>
-			<Column lg={4}>
+			<Column md={6} lg={4}>
 				<School>
 					<SchoolName>Cornerstone Elementary</SchoolName>
 					<Address>
@@ -61,7 +61,7 @@ export default () =>
 					</Address>
 				</School>
 			</Column>
-			<Column lg={4}>
+			<Column md={6} lg={4}>
 				<School>
 					<SchoolName>Dapplegray Elementary</SchoolName>
 					<Address>
@@ -69,7 +69,7 @@ export default () =>
 					</Address>
 				</School>
 			</Column>
-			<Column lg={4}>
+			<Column md={6} lg={4}>
 				<School>
 					<SchoolName>Mira Catalina Elementary</SchoolName>
 					<Address>
@@ -77,7 +77,7 @@ export default () =>
 					</Address>
 				</School>
 			</Column>
-			<Column lg={4}>
+			<Column md={6} lg={4}>
 				<School>
 					<SchoolName>Lunada Bay Elementary</SchoolName>
 					<Address>
@@ -85,7 +85,7 @@ export default () =>
 					</Address>
 				</School>
 			</Column>
-			<Column lg={4}>
+			<Column md={6} lg={4}>
 				<School>
 					<SchoolName>Montemalaga Elementary</SchoolName>
 					<Address>
@@ -93,7 +93,7 @@ export default () =>
 					</Address>
 				</School>
 			</Column>
-			<Column lg={4}>
+			<Column md={6} lg={4}>
 				<School>
 					<SchoolName>Point Vicente Elementary</SchoolName>
 					<Address>
@@ -101,7 +101,7 @@ export default () =>
 					</Address>
 				</School>
 			</Column>
-			<Column lg={4}>
+			<Column md={6} lg={4}>
 				<School>
 					<SchoolName>Rancho Vista Elementary</SchoolName>
 					<Address>
@@ -109,7 +109,7 @@ export default () =>
 					</Address>
 				</School>
 			</Column>
-			<Column lg={4}>
+			<Column md={6} lg={4}>
 				<School>
 					<SchoolName>Silver Spur Elementary</SchoolName>
 					<Address>
@@ -117,7 +117,7 @@ export default () =>
 					</Address>
 				</School>
 			</Column>
-			<Column lg={4}>
+			<Column md={6} lg={4}>
 				<School>
 					<SchoolName>Soleado Elementary</SchoolName>
 					<Address>
@@ -125,7 +125,7 @@ export default () =>
 					</Address>
 				</School>
 			</Column>
-			<Column lg={4}>
+			<Column md={6} lg={4}>
 				<School>
 					<SchoolName>Vista Grande Elementary</SchoolName>
 					<Address>

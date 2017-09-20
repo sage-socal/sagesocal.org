@@ -8,6 +8,7 @@ const Header = styled.header`
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+	flex-wrap: wrap;
 `
 const NavBar = styled.nav``
 const PageLink = withRouter(styled.a`

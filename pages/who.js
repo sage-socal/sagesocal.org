@@ -74,7 +74,7 @@ export default () =>
 			<title>CASSY SoCal / Who We Are</title>
 		</Head>
 		<MainImageSection>
-			<Column lg={5} lgShift={7}>
+			<Column md={6} mdShift={6} lg={5} lgShift={7}>
 				<FlagSubSection>
 					<WhiteLargeHeading>Here to help youth.</WhiteLargeHeading>
 					<WhiteParagraph>
@@ -88,7 +88,7 @@ export default () =>
 			</Column>
 		</MainImageSection>
 		<Section>
-			<Column lg={6}>
+			<Column md={6}>
 				<LargeHeading>Young People Need Our Support</LargeHeading>
 				<Paragraph>
 					In a given year, 20% of young people experience mental health issues
@@ -107,15 +107,15 @@ export default () =>
 					it is available at their school, especially if it is free.
 				</Paragraph>
 			</Column>
-			<Column lg={6}>
+			<Column md={6}>
 				<FitImage src="/static/images/kid-help.jpg" />
 			</Column>
 		</Section>
 		<Section>
-			<Column lg={6}>
+			<Column md={6}>
 				<FitImage src="/static/images/students-group.jpg" />
 			</Column>
-			<Column lg={6}>
+			<Column md={6}>
 				<LargeHeading>
 					CASSY Offers Schools a Mental Health Safety Net
 				</LargeHeading>
@@ -141,7 +141,7 @@ export default () =>
 			</Column>
 		</Section>
 		<BlueSection>
-			<Column lg={8} lgShift={2}>
+			<Column md={8} mdShift={2}>
 				<WhiteSectionTitle>Introducing CASSY SoCal</WhiteSectionTitle>
 				<WhiteParagraph>
 					CASSY (Counseling and Support Services for Youth) was founded in the
@@ -180,10 +180,10 @@ export default () =>
 			</Column>
 		</Section>
 		<PrincipleSection>
-			<Column lg={2}>
+			<Column md={2}>
 				<Number>#1</Number>
 			</Column>
-			<Column lg={8}>
+			<Column md={8}>
 				<BodyHeadline>
 					Be available to help all students, regardless of their ability to pay.
 				</BodyHeadline>
@@ -197,10 +197,10 @@ export default () =>
 			</Column>
 		</PrincipleSection>
 		<PrincipleSection>
-			<Column lg={2}>
+			<Column md={2}>
 				<Number>#2</Number>
 			</Column>
-			<Column lg={8}>
+			<Column md={8}>
 				<BodyHeadline>
 					Partner with schools to make mental health a key part of the
 					educational process.
@@ -216,10 +216,10 @@ export default () =>
 			</Column>
 		</PrincipleSection>
 		<PrincipleSection>
-			<Column lg={2}>
+			<Column md={2}>
 				<Number>#3</Number>
 			</Column>
-			<Column lg={8}>
+			<Column md={8}>
 				<BodyHeadline>
 					Tailor our programs to meet the unique needs of the population we will
 					serve.
@@ -234,10 +234,10 @@ export default () =>
 			</Column>
 		</PrincipleSection>
 		<PrincipleSection>
-			<Column lg={2}>
+			<Column md={2}>
 				<Number>#4</Number>
 			</Column>
-			<Column lg={8}>
+			<Column md={8}>
 				<BodyHeadline>
 					Hire, train and mentor professional therapists who love working with
 					youth.
@@ -252,10 +252,10 @@ export default () =>
 			</Column>
 		</PrincipleSection>
 		<PrincipleSection>
-			<Column lg={2}>
+			<Column md={2}>
 				<Number>#5</Number>
 			</Column>
-			<Column lg={8}>
+			<Column md={8}>
 				<BodyHeadline>Commit to making a difference.</BodyHeadline>
 				<Paragraph>
 					We take great pride in improving the lives of the students we support.

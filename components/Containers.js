@@ -6,6 +6,7 @@ export const CASSYPage = styled(Page)`
 	background: ${colors.white};
 	box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px 0px;
 	padding-bottom: 60px;
+	overflow: hidden;
 `
 
 export const Section = styled(Row)`

@@ -7,6 +7,7 @@ import { LargeHeading, Paragraph, BodyHeadline } from '../components/Text'
 import { blue, stone } from '../utils/colors'
 import { tint } from 'polished'
 import Head from 'next/head'
+import { utils } from 'hedron'
 
 const Blurb = Section.extend`justify-content: center;`
 
@@ -29,6 +30,7 @@ const CircleImage = FitImage.extend`
 	width: 150px;
 	height: 150px;
 	border-radius: 75px;
+	float: right;
 `
 
 export default () =>
@@ -38,6 +40,7 @@ export default () =>
 		</Head>
 		<Blurb>
 			<Column lg={8}>
+				<Paragraph />
 				<LargeHeading>Contact us.</LargeHeading>
 				<Paragraph>
 					If you are school personnel or a parent and want to know more about
@@ -48,10 +51,10 @@ export default () =>
 			</Column>
 		</Blurb>
 		<Blurb>
-			<Column lg={2}>
+			<Column md={4} lg={2}>
 				<CircleImage src="/static/images/liz-schoeben.jpg" />
 			</Column>
-			<Column lg={4}>
+			<Column md={6} lg={4}>
 				<Person primary>Liz Schoeben, MFT</Person>
 				<PersonTitle primary>Executive Director</PersonTitle>
 				<Contact primary>
@@ -60,10 +63,10 @@ export default () =>
 			</Column>
 		</Blurb>
 		<Blurb>
-			<Column lg={2}>
+			<Column md={4} lg={2}>
 				<CircleImage src="/static/person-placeholder.jpg" />
 			</Column>
-			<Column lg={4}>
+			<Column md={6} lg={4}>
 				<Person primary>Kathi Colli, MFT</Person>
 				<PersonTitle primary>Clinical Supervisor</PersonTitle>
 				<Contact primary>
@@ -73,18 +76,18 @@ export default () =>
 		</Blurb>
 
 		<Blurb>
-			<Column lg={2}>
+			<Column md={4} lg={2}>
 				<CircleImage src="/static/person-placeholder.jpg" />
 			</Column>
-			<Column lg={3}>
+			<Column md={6} lg={3}>
 				<Person>Barbara Gani, LCSW</Person>
 				<PersonTitle>Student Support Specialist at Peninsula High</PersonTitle>
 				<Contact>ganib@pvpusd.net</Contact>
 			</Column>
-			<Column lg={2}>
+			<Column md={4} lg={2}>
 				<CircleImage src="/static/person-placeholder.jpg" />
 			</Column>
-			<Column lg={3}>
+			<Column md={6} lg={3}>
 				<Person>Nancy De La Rosa, MFTi</Person>
 				<PersonTitle>
 					Student Support Specialist at Palos Verdes High School
@@ -93,18 +96,18 @@ export default () =>
 			</Column>
 		</Blurb>
 		<Blurb>
-			<Column lg={2}>
+			<Column md={4} lg={2}>
 				<CircleImage src="/static/person-placeholder.jpg" />
 			</Column>
-			<Column lg={3}>
+			<Column md={6} lg={3}>
 				<Person>Cynthia Lopez Herrera, MSW</Person>
 				<PersonTitle>Elementary Student Support Specialist</PersonTitle>
 				<Contact>lopezcy@pvpusd.net</Contact>
 			</Column>
-			<Column lg={2}>
+			<Column md={4} lg={2}>
 				<CircleImage src="/static/person-placeholder.jpg" />
 			</Column>
-			<Column lg={3}>
+			<Column md={6} lg={3}>
 				<Person>Sarit Fassazadeh, LCSW</Person>
 				<PersonTitle>Elementary Student Support Specialist</PersonTitle>
 				<Contact>
