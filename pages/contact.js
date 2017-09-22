@@ -5,32 +5,55 @@ import { FitImage } from '../components/Media'
 import { Section } from '../components/Containers'
 import { LargeHeading, Paragraph, BodyHeadline } from '../components/Text'
 import { blue, stone } from '../utils/colors'
+import { media } from '../utils/style-utils'
 import { tint } from 'polished'
 import Head from 'next/head'
-import { utils } from 'hedron'
 
 const Blurb = Section.extend`justify-content: center;`
 
 const Person = BodyHeadline.extend`
 	color: ${blue};
-	font-size: ${props => (props.primary ? `28px` : `24px`)};
+	font-size: 22px;
+	text-align: center;
+	${media.md`
+		text-align: left;
+		font-size: ${props => (props.primary ? `28px` : `24px`)};
+	`};
 `
 
 const PersonTitle = BodyHeadline.extend`
 	color: ${tint(0.5, stone)};
-	font-size: ${props => (props.primary ? `22px` : `18px`)};
+	font-size: 18px;
+	text-align: center;
+	${media.md`
+		text-align: left;
+		font-size: ${props => (props.primary ? `22px` : `18px`)};
+	`};
 `
 
 const Contact = Paragraph.extend`
+	font-size: 16px;
 	margin: 5px 0;
-	font-size: ${props => (props.primary ? `20px` : `18px`)};
+	text-align: center;
+	${media.md`
+		text-align: left;
+		font-size: ${props => (props.primary ? `20px` : `18px`)};
+	`};
 `
 
 const CircleImage = FitImage.extend`
-	width: 150px;
-	height: 150px;
-	border-radius: 75px;
-	float: right;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	margin: auto;
+	display: block;
+	${media.md`
+		width: 150px;
+		height: 150px;
+		border-radius: 75px;
+		float: right;
+		margin: none;
+	`};
 `
 
 export default () =>
