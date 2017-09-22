@@ -12,11 +12,15 @@ import {
 import { orange, green, blue, white, stone } from '../utils/colors'
 import styled from 'styled-components'
 import Head from 'next/head'
+import { media } from '../utils/style-utils'
 
 const MainImageSection = Section.extend`
 	background-size: cover;
 	background-image: url('/static/images/friends-dog.jpg');
-	min-height: 360px;
+	height: 200px;
+	${media.md`
+		height: 360px;
+	`};
 `
 const FlagSubSection = SubSection.extend`
 	background-color: rgba(63, 65, 51, 0.8);
@@ -158,7 +162,9 @@ export default () =>
 		</GradientSection>
 		<Section style={{ zIndex: 5, marginTop: 0 }}>
 			<Column>
-				<LargeHeading style={{ textAlign: 'center', color: blue }}>
+				<LargeHeading
+					style={{ marginBottom: -25, textAlign: 'center', color: blue }}
+				>
 					Quantitative
 				</LargeHeading>
 			</Column>
@@ -195,7 +201,9 @@ export default () =>
 				</Service>
 			</Column>
 			<Column>
-				<LargeHeading style={{ textAlign: 'center', color: blue }}>
+				<LargeHeading
+					style={{ marginBottom: -25, textAlign: 'center', color: blue }}
+				>
 					Qualitative
 				</LargeHeading>
 			</Column>

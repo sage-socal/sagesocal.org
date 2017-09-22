@@ -14,9 +14,11 @@ import { orange, green, blue, white, beige, stone } from '../utils/colors'
 import styled from 'styled-components'
 import { tint } from 'polished'
 import Head from 'next/head'
+import { media } from '../utils/style-utils'
 
 const MainImageSection = Section.extend`
 	background-size: cover;
+	background-position: top center;
 	background-image: url('/static/images/teenagers.jpg');
 `
 const WhiteLargeHeading = LargeHeading.extend`color: ${white};`
@@ -62,10 +64,17 @@ const OrangeBox = styled.div`
 `
 const Number = styled.h3`
 	color: ${tint(0.2, stone)};
-	text-align: right;
-	font-size: 48px;
 	font-family: 'Avenir', Helvetica, sans-serif;
 	margin: 0;
+	text-align: center;
+	font-size: 32px;
+	position: relative;
+	bottom: -20px;
+	${media.md`
+		text-align: right;
+		font-size: 48px;
+		bottom: 0;
+	`};
 `
 
 export default () =>
@@ -168,19 +177,19 @@ export default () =>
 				</WhiteParagraph>
 			</Column>
 		</BlueSection>
-		<Section style={{ paddingBottom: 0 }}>
-			<Column>
+		<Section style={{ justifyContent: 'center', paddingBottom: 0 }}>
+			<Column md={8}>
 				<SectionTitle style={{ textAlign: 'center' }}>
 					Our Guiding Principles
 				</SectionTitle>
 				<SubHeadline style={{ textAlign: 'center' }}>
-					Although every program is unique,<br /> we always stick to the
-					following five core principles:
+					Although every program is unique, we always stick to the following
+					five core principles:
 				</SubHeadline>
 			</Column>
 		</Section>
 		<PrincipleSection>
-			<Column md={2}>
+			<Column md={2} lg={1}>
 				<Number>#1</Number>
 			</Column>
 			<Column md={8}>
@@ -197,7 +206,7 @@ export default () =>
 			</Column>
 		</PrincipleSection>
 		<PrincipleSection>
-			<Column md={2}>
+			<Column md={2} lg={1}>
 				<Number>#2</Number>
 			</Column>
 			<Column md={8}>
@@ -216,7 +225,7 @@ export default () =>
 			</Column>
 		</PrincipleSection>
 		<PrincipleSection>
-			<Column md={2}>
+			<Column md={2} lg={1}>
 				<Number>#3</Number>
 			</Column>
 			<Column md={8}>
@@ -234,7 +243,7 @@ export default () =>
 			</Column>
 		</PrincipleSection>
 		<PrincipleSection>
-			<Column md={2}>
+			<Column md={2} lg={1}>
 				<Number>#4</Number>
 			</Column>
 			<Column md={8}>
@@ -252,7 +261,7 @@ export default () =>
 			</Column>
 		</PrincipleSection>
 		<PrincipleSection>
-			<Column md={2}>
+			<Column md={2} lg={1}>
 				<Number>#5</Number>
 			</Column>
 			<Column md={8}>
