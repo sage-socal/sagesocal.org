@@ -3,12 +3,8 @@ import Link from 'next/link'
 import { green, orange, blue } from '../utils/colors'
 import { withRouter } from 'next/router'
 import { media } from '../utils/style-utils'
-import { fadeInDown } from 'react-animations'
-
-const fadeInAnimation = keyframes`${fadeInDown}`
 
 const Header = styled.header`
-	animation: 0.5s ${fadeInAnimation};
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -24,7 +20,6 @@ const NavBar = styled.nav`
 	justify-content: center;
 `
 const PageLink = withRouter(styled.a`
-	animation: 0.5s ${fadeInAnimation};
 	display: inline-block;
 	text-decoration: none;
 	font-weight: 500;
