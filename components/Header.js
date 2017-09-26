@@ -5,7 +5,7 @@ export default ({ page }) =>
 	<Row>
 		<Column>
 			<Navigation
-				logo="/static/logo-socal.png"
+				logo="/static/logo-socal-sm.png"
 				active={page}
 				pages={[
 					{ path: '/who', title: 'Who We Are' },
