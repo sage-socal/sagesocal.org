@@ -1,31 +1,18 @@
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/zeit/next.js/tree/master/examples/with-styled-components)
+# CASSY Southern California Website (cassysocal.org)
 
-# Example app with styled-components
+## Content Management
+All site content is stored as markdown files in the `/content` directory of the
+repository.
 
-## How to use
+## Development
+To work with the site in development, run `yarn dev`, which will launch a hot
+reloading dev server.
 
-Download the example [or clone the repo](https://github.com/zeit/next.js):
+## Deploy
+1. run `yarn export`
+2. run `yarn deploy`
+3. alias the new deployment to cassysocal.org
 
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/master | tar -xz --strip=2 next.js-master/examples/with-styled-components
-cd with-styled-components
-```
-
-Install it and run:
-
-```bash
-npm install
-npm run dev
-```
-
-Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download))
-
-```bash
-now
-```
-
-## The idea behind the example
-
-This example features how you use a different styling solution than [styled-jsx](https://github.com/zeit/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
-
-For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`.
+## Hosting
+- The `master` branch of this repository corresponds with what is deployed to `cassysocal.org`
+- The `develop` branch is where the latest work will be, which should be deployed to `staging.cassysocal.org`
