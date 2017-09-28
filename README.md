@@ -15,4 +15,4 @@ reloading dev server.
 
 ## Hosting
 - The `master` branch of this repository corresponds with what is deployed to `cassysocal.org`
-- The `develop` branch is where the latest work will be, which should be deployed to `staging.cassysocal.org`
+- The `develop` branch is where the latest work will be, which should be deployed to `dev.cassysocal.org`
