@@ -1,8 +1,8 @@
 # CASSY Southern California Website (cassysocal.org)
 
-## Content Management
+<!-- ## Content Management
 All site content is stored as markdown files in the `/content` directory of the
-repository.
+repository. -->
 
 ## Development
 To work with the site in development, run `yarn dev`, which will launch a hot
