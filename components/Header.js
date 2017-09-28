@@ -1,8 +1,10 @@
 import { Row, Column } from 'hedron'
 import Navigation from './Navigation'
 
+const Wrap = Row.extend`box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);`
+
 export default ({ page }) =>
-	<Row>
+	<Wrap>
 		<Column>
 			<Navigation
 				logo="/static/logo-socal-sm.png"
@@ -16,4 +18,4 @@ export default ({ page }) =>
 				]}
 			/>
 		</Column>
-	</Row>
+	</Wrap>

@@ -1,6 +1,7 @@
 import styled, { keyframes } from 'styled-components'
 import Link from 'next/link'
 import { green, orange, blue } from '../utils/colors'
+import { tint } from 'polished'
 import { withRouter } from 'next/router'
 import { media } from '../utils/style-utils'
 
@@ -28,7 +29,15 @@ const PageLink = withRouter(styled.a`
 	margin: 8px;
 	color: ${green};
 	border-bottom: none;
+	${props =>
+		props.active &&
+		`background-image: linear-gradient(-100deg, rgba(255, 255, 255, 0), ${tint(
+			0.45,
+			blue
+		)} 85%, rgba(255, 255, 255, 0));
+	`};
 	${media.md`
+		background: none;
 		font-size: 20px;
 		margin: 15px;
 		margin-bottom: 0;

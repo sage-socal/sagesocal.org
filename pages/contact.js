@@ -97,7 +97,6 @@ export default () =>
 				</Contact>
 			</Column>
 		</Blurb>
-
 		<Blurb>
 			<Column md={4} lg={2}>
 				<CircleImage src="/static/person-placeholder.jpg" />
@@ -105,7 +104,9 @@ export default () =>
 			<Column md={6} lg={3}>
 				<Person>Barbara Gani, LCSW</Person>
 				<PersonTitle>Student Support Specialist at Peninsula High</PersonTitle>
-				<Contact>ganib@pvpusd.net</Contact>
+				<Contact>
+					(310) 377-4888 x211<br />ganib@pvpusd.net
+				</Contact>
 			</Column>
 			<Column md={4} lg={2}>
 				<CircleImage src="/static/person-placeholder.jpg" />
@@ -115,7 +116,9 @@ export default () =>
 				<PersonTitle>
 					Student Support Specialist at Palos Verdes High School
 				</PersonTitle>
-				<Contact>delarosan@pvpusd.net</Contact>
+				<Contact>
+					(310) 378-8471 x213<br />delarosan@pvpusd.net
+				</Contact>
 			</Column>
 		</Blurb>
 		<Blurb>
@@ -125,7 +128,9 @@ export default () =>
 			<Column md={6} lg={3}>
 				<Person>Cynthia Lopez Herrera, MSW</Person>
 				<PersonTitle>Elementary Student Support Specialist</PersonTitle>
-				<Contact>lopezcy@pvpusd.net</Contact>
+				<Contact>
+					(424) 328-1445<br />lopezcy@pvpusd.net
+				</Contact>
 			</Column>
 			<Column md={4} lg={2}>
 				<CircleImage src="/static/person-placeholder.jpg" />
