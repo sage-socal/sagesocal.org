@@ -1,3 +1,4 @@
+// @flow
 import React from 'react'
 import Base from '../components/Base'
 import { Row, Column } from 'hedron'
@@ -9,7 +10,9 @@ import { media } from '../utils/style-utils'
 import { tint } from 'polished'
 import Head from 'next/head'
 
-const Blurb = Section.extend`justify-content: center;`
+const Blurb = Section.extend`
+	justify-content: center;
+`
 
 const Person = BodyHeadline.extend`
 	color: ${blue};
@@ -56,7 +59,7 @@ const CircleImage = FitImage.extend`
 	`};
 `
 
-export default () =>
+export default () => (
 	<Base page="contact">
 		<Head>
 			<title>CASSY SoCal / Contact</title>
@@ -87,7 +90,7 @@ export default () =>
 		</Blurb>
 		<Blurb>
 			<Column md={4} lg={2}>
-				<CircleImage src="/static/person-placeholder.jpg" />
+				<CircleImage src="/static/images/kathi-colli.jpg" />
 			</Column>
 			<Column md={6} lg={4}>
 				<Person primary>Kathi Colli, MFT</Person>
@@ -109,7 +112,7 @@ export default () =>
 				</Contact>
 			</Column>
 			<Column md={4} lg={2}>
-				<CircleImage src="/static/person-placeholder.jpg" />
+				<CircleImage src="/static/images/nanci-de-la-rosa.jpg" />
 			</Column>
 			<Column md={6} lg={3}>
 				<Person>Nancy De La Rosa, MFTi</Person>
@@ -123,7 +126,7 @@ export default () =>
 		</Blurb>
 		<Blurb>
 			<Column md={4} lg={2}>
-				<CircleImage src="/static/person-placeholder.jpg" />
+				<CircleImage src="/static/images/cynthia-lopez.jpg" />
 			</Column>
 			<Column md={6} lg={3}>
 				<Person>Cynthia Lopez Herrera, MSW</Person>
@@ -144,3 +147,4 @@ export default () =>
 			</Column>
 		</Blurb>
 	</Base>
+)
