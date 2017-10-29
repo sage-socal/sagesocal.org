@@ -102,7 +102,7 @@ export default () => (
 		</Blurb>
 		<Blurb>
 			<Column md={4} lg={2}>
-				<CircleImage src="/static/person-placeholder.jpg" />
+				<CircleImage src="/static/images/barbara-gani.jpg" />
 			</Column>
 			<Column md={6} lg={3}>
 				<Person>Barbara Gani, LCSW</Person>
@@ -136,7 +136,7 @@ export default () => (
 				</Contact>
 			</Column>
 			<Column md={4} lg={2}>
-				<CircleImage src="/static/person-placeholder.jpg" />
+				<CircleImage src="/static/images/sarit.jpg" />
 			</Column>
 			<Column md={6} lg={3}>
 				<Person>Sarit Fassazadeh, LCSW</Person>
