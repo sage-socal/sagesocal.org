@@ -17,9 +17,11 @@ export default class Doante extends Component {
 		document.getElementsByTagName('head')[0].appendChild(script)
 	}
 
+	componentWillUnmount() {}
+
 	render() {
 		return (
-			<div id="" ref={el => (this.instance = el)}>
+			<div ref={el => (this.instance = el)}>
 				<div id="bbox-root" />
 			</div>
 		)
