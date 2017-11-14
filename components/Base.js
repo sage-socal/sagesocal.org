@@ -1,5 +1,5 @@
 // @flow
-import React from 'react'
+import React, { Component } from 'react'
 import { CASSYPage } from './Containers'
 import Header from './Header'
 import Footer from './Footer'
@@ -7,7 +7,6 @@ import { lifecycle } from 'recompose'
 import ReactGA from 'react-ga'
 
 const initGA = () => {
-	console.log('GA init')
 	ReactGA.initialize('UA-109703609-1')
 }
 
@@ -18,20 +17,23 @@ const logPageView = page => {
 
 type Props = {
 	children?: any,
-	page?: string
+	page: string
 }
 
-export default lifecycle({
+export default class Base extends Component<Props> {
 	componentDidMount() {
 		initGA()
 		logPageView(this.props.page)
 	}
-})(({ page, children }: Props) => (
-	<div>
-		<CASSYPage width="1200px">
-			<Header page={page} />
-			{children}
-		</CASSYPage>
-		<Footer />
-	</div>
-))
+	render() {
+		return (
+			<div>
+				<CASSYPage width="1200px">
+					<Header page={this.props.page} />
+					{this.props.children}
+				</CASSYPage>
+				<Footer />
+			</div>
+		)
+	}
+}
