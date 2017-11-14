@@ -16,7 +16,7 @@ export default compose(
 	}),
 	withScriptjs,
 	withGoogleMap
-)(() =>
+)(() => (
 	<GoogleMap defaultZoom={12} defaultCenter={{ lat: 33.7445, lng: -118.387 }}>
 		{/* <Marker
 			name="Palos Verdes Peninsula High School"
@@ -27,4 +27,4 @@ export default compose(
 			position={{ lat: 33.779738, lng: -118.4199613 }}
 		/> */}
 	</GoogleMap>
-)
+))

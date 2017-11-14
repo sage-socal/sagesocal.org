@@ -15,4 +15,6 @@ export const Section = styled(Row)`
 	position: relative;
 `
 
-export const SubSection = styled.div`padding: 30px;`
+export const SubSection = styled.div`
+	padding: 30px;
+`

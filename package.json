@@ -6,7 +6,8 @@
 		"build": "next build",
 		"start": "next start",
 		"export": "next build && next export",
-		"deploy": "now out --name cassysocal"
+		"deploy": "now out --name cassysocal",
+		"flow": "flow"
 	},
 	"dependencies": {
 		"babel-plugin-styled-components": "^1.1.5",
@@ -18,10 +19,14 @@
 		"react-animations": "^0.1.0",
 		"react-burger-menu": "^2.1.6",
 		"react-dom": "15.6.1",
+		"react-ga": "^2.3.5",
 		"react-google-maps": "^8.2.0",
 		"recompose": "^0.25.0",
 		"styled-components": "^2.1.0",
 		"styled-normalize": "^2.2.1"
 	},
-	"license": "ISC"
+	"license": "ISC",
+	"devDependencies": {
+		"flow-bin": "^0.59.0"
+	}
 }
