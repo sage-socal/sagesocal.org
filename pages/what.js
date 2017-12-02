@@ -25,12 +25,24 @@ const MainImageSection = Section.extend`
 const FlagSubSection = SubSection.extend`
 	background-color: rgba(63, 65, 51, 0.8);
 `
-const WhiteLargeHeading = LargeHeading.extend`color: ${white};`
-const WhiteSectionTitle = SectionTitle.extend`color: ${white};`
-const WhiteParagraph = Paragraph.extend`color: ${white};`
-const CenterSection = Section.extend`justify-content: center;`
-const ServiceTitle = BodyHeadline.extend`color: ${blue};`
-const Service = styled.div`margin: 20px 0;`
+const WhiteLargeHeading = LargeHeading.extend`
+	color: ${white};
+`
+const WhiteSectionTitle = SectionTitle.extend`
+	color: ${white};
+`
+const WhiteParagraph = Paragraph.extend`
+	color: ${white};
+`
+const CenterSection = Section.extend`
+	justify-content: center;
+`
+const ServiceTitle = BodyHeadline.extend`
+	color: ${blue};
+`
+const Service = styled.div`
+	margin: 20px 0;
+`
 const GradientSection = Section.extend`
 	background: linear-gradient(${green} 0%, ${white} 100%);
 	position: relative;
@@ -40,7 +52,7 @@ const GradientSection = Section.extend`
 	z-index: 1;
 `
 
-export default () =>
+export default () => (
 	<Base page="what">
 		<Head>
 			<title>CASSY SoCal / What We Do</title>
@@ -83,7 +95,7 @@ export default () =>
 			</Column>
 			<Column style={{ paddingTop: 0 }} lg={5}>
 				<Service>
-					<ServiceTitle>Ongoing Counceling</ServiceTitle>
+					<ServiceTitle>Ongoing Counseling</ServiceTitle>
 					<Paragraph>
 						CASSY provides individual, family and group counseling sessions
 						on-campus during school hours. Group topics include Grief and Loss,
@@ -236,3 +248,4 @@ export default () =>
 			</Column>
 		</Section>
 	</Base>
+)

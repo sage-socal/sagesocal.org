@@ -5,7 +5,7 @@ import { Section } from '../components/Containers'
 import Donate from '../components/Donate'
 import { LargeHeading, BodyHeadline, Paragraph } from '../components/Text'
 import Head from 'next/head'
-import { green, blue } from '../utils/colors'
+import { green, blue, orange } from '../utils/colors'
 import styled from 'styled-components'
 
 const DonateHeading = BodyHeadline.extend`
@@ -27,6 +27,15 @@ const DonationAmount = Paragraph.extend`
 `
 
 const DonationDescription = Paragraph.extend``
+
+const NewsItem = styled.a`
+	text-decoration: none;
+	img {
+		width: 100%;
+		display: block;
+		margin: 20px 0;
+	}
+`
 
 export default () => (
 	<Base page="donate">
@@ -77,6 +86,30 @@ export default () => (
 						year
 					</DonationDescription>
 				</Donation>
+				<DonateHeading>In The News</DonateHeading>
+				<NewsItem
+					href="https://www.easyreadernews.com/student-safety-valve/"
+					target="_blank"
+				>
+					<img
+						src="/static/images/student-safety-valve.jpg"
+						alt="Linsey Gotanda Ed.D, Emiko Chapman M.Ed., Liz Schoeben MFT, Nancy De La Rosa MFT. Photos by Brad Jacobson (CivicCouch.com)"
+					/>
+					<DonateHeading
+						style={{ fontSize: 26, color: orange, marginBottom: 0 }}
+					>
+						Student safety valve
+					</DonateHeading>
+					<Paragraph style={{ marginTop: 8 }}>
+						Liz Schoeben’s therapists help school students deal with increasing
+						pressures
+					</Paragraph>
+					<Paragraph
+						style={{ fontSize: 16, textDecoration: 'underline', color: green }}
+					>
+						www.easyreadernews.com/student-safety-valve
+					</Paragraph>
+				</NewsItem>
 			</Column>
 			<Column lg={7}>
 				<Donate />
