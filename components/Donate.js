@@ -16,10 +16,9 @@ export default class Doante extends Component {
 		script.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js'
 		document.getElementsByTagName('head')[0].appendChild(script)
 	}
-
 	render() {
 		return (
-			<div id="" ref={el => (this.instance = el)}>
+			<div ref={el => (this.instance = el)}>
 				<div id="bbox-root" />
 			</div>
 		)
