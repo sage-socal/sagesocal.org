@@ -126,13 +126,13 @@ export default () => (
 		</Blurb>
 		<Blurb>
 			<Column md={4} lg={2}>
-				<CircleImage src="/static/images/cynthia-lopez.jpg" />
+				<CircleImage src="/static/images/kourtney.jpg" />
 			</Column>
 			<Column md={6} lg={3}>
-				<Person>Cynthia Lopez Herrera, MSW</Person>
+				<Person>Kourtney Gonzalez, MFT</Person>
 				<PersonTitle>Elementary Student Support Specialist</PersonTitle>
 				<Contact>
-					(424) 328-1445<br />lopezcy@pvpusd.net
+					(424) 262-6289<br />gonzalezk@pvpusd.net
 				</Contact>
 			</Column>
 			<Column md={4} lg={2}>
