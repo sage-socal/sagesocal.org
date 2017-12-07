@@ -1,5 +1,5 @@
 // @flow
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import { CASSYPage } from './Containers'
 import Header from './Header'
 import Footer from './Footer'
@@ -20,7 +20,7 @@ type Props = {
 	page: string
 }
 
-export default class Base extends Component<Props> {
+export default class Base extends PureComponent<Props> {
 	componentDidMount() {
 		initGA()
 		logPageView(this.props.page)
