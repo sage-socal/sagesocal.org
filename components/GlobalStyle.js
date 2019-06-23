@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import { beige, blue } from '../utils/colors'
+import { chalk, blue } from '../utils/colors'
 import { tint } from 'polished'
 
 const SageGlobalStyle = createGlobalStyle`
@@ -8,7 +8,7 @@ const SageGlobalStyle = createGlobalStyle`
 	}
 
 	body {
-		background-color: ${beige};
+		background-color: ${chalk};
 		background-image: url('/static/cardboard-flat.png');
 		background-attachment: fixed;
 	}

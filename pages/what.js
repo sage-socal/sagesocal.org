@@ -9,7 +9,7 @@ import {
   BodyHeadline,
   Paragraph
 } from '../components/Text'
-import { orange, green, blue, white, stone } from '../utils/colors'
+import { orange, yellow, blue, white, stone } from '../utils/colors'
 import styled from 'styled-components'
 import Head from 'next/head'
 import { media } from '../utils/style-utils'
@@ -44,7 +44,7 @@ const Service = styled.div`
   margin: 20px 0;
 `
 const GradientSection = styled(Section)`
-  background: linear-gradient(${green} 0%, ${white} 100%);
+  background: linear-gradient(${yellow} 0%, ${white} 100%);
   position: relative;
   justify-content: center;
   padding-bottom: 100px;

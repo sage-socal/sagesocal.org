@@ -54,7 +54,7 @@ const BlueSection = styled(Section)`
   }
 `
 const FlagSubSection = styled(SubSection)`
-  background-color: rgba(63, 65, 51, 0.8);
+  background-color: ${stone};
 `
 const PrincipleSection = styled(Section)`
   justify-content: center;
