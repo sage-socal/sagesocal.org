@@ -10,7 +10,7 @@ export default ({ page }) => (
   <Wrap>
     <Column>
       <Navigation
-        logo="/static/logo-socal-sm.png"
+        logo="/static/logo.png"
         active={page}
         pages={[
           { path: '/who', title: 'Who We Are' },
