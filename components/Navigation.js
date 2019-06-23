@@ -24,7 +24,7 @@ const PageLink = withRouter(styled.a`
   display: inline-block;
   text-decoration: none;
   font-weight: 500;
-  font-family: 'Avenir', Helvetica, sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 15px;
   margin: 8px;
   color: ${blue};

@@ -4,7 +4,7 @@ import { media } from '../utils/style-utils'
 import { stone } from '../utils/colors'
 
 const Content = styled.footer`
-  font-family: 'Avenir', sans-serif;
+  font-family: 'Rubik', sans-serif;
   color: ${stone};
   padding: 10px 0;
   text-align: center;
