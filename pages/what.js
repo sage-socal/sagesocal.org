@@ -14,7 +14,7 @@ import styled from 'styled-components'
 import Head from 'next/head'
 import { media } from '../utils/style-utils'
 
-const MainImageSection = Section.extend`
+const MainImageSection = styled(Section)`
   background-size: cover;
   background-image: url('/static/images/friends-dog.jpg');
   height: 200px;
@@ -22,28 +22,28 @@ const MainImageSection = Section.extend`
 		height: 360px;
 	`};
 `
-const FlagSubSection = SubSection.extend`
+const FlagSubSection = styled(SubSection)`
   background-color: rgba(63, 65, 51, 0.8);
 `
-const WhiteLargeHeading = LargeHeading.extend`
+const WhiteLargeHeading = styled(LargeHeading)`
   color: ${white};
 `
-const WhiteSectionTitle = SectionTitle.extend`
+const WhiteSectionTitle = styled(SectionTitle)`
   color: ${white};
 `
-const WhiteParagraph = Paragraph.extend`
+const WhiteParagraph = styled(Paragraph)`
   color: ${white};
 `
-const CenterSection = Section.extend`
+const CenterSection = styled(Section)`
   justify-content: center;
 `
-const ServiceTitle = BodyHeadline.extend`
+const ServiceTitle = styled(BodyHeadline)`
   color: ${blue};
 `
 const Service = styled.div`
   margin: 20px 0;
 `
-const GradientSection = Section.extend`
+const GradientSection = styled(Section)`
   background: linear-gradient(${green} 0%, ${white} 100%);
   position: relative;
   justify-content: center;

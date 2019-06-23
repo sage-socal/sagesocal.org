@@ -16,22 +16,22 @@ import { tint } from 'polished'
 import Head from 'next/head'
 import { media } from '../utils/style-utils'
 
-const MainImageSection = Section.extend`
+const MainImageSection = styled(Section)`
   background-size: cover;
   background-position: top center;
   background-image: url('/static/images/teenagers.jpg');
 `
-const WhiteLargeHeading = LargeHeading.extend`
+const WhiteLargeHeading = styled(LargeHeading)`
   color: ${white};
 `
-const WhiteSectionTitle = SectionTitle.extend`
+const WhiteSectionTitle = styled(SectionTitle)`
   margin-bottom: 20px;
   color: ${white};
 `
-const WhiteParagraph = Paragraph.extend`
+const WhiteParagraph = styled(Paragraph)`
   color: ${white};
 `
-const BlueSection = Section.extend`
+const BlueSection = styled(Section)`
   background-color: ${blue};
   position: relative;
   &:after {
@@ -53,10 +53,10 @@ const BlueSection = Section.extend`
     z-index: 5;
   }
 `
-const FlagSubSection = SubSection.extend`
+const FlagSubSection = styled(SubSection)`
   background-color: rgba(63, 65, 51, 0.8);
 `
-const PrincipleSection = Section.extend`
+const PrincipleSection = styled(Section)`
   justify-content: center;
   padding: 0 20px;
 `

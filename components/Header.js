@@ -1,7 +1,8 @@
 import { Row, Column } from 'hedron'
 import Navigation from './Navigation'
+import styled from 'styled-components'
 
-const Wrap = Row.extend`
+const Wrap = styled(Row)`
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
 `
 

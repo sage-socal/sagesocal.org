@@ -8,11 +8,11 @@ import Head from 'next/head'
 import { green, blue, orange } from '../utils/colors'
 import styled from 'styled-components'
 
-const Blurb = Section.extend`
+const Blurb = styled(Section)`
   justify-content: center;
 `
 
-const DonateHeading = BodyHeadline.extend`
+const DonateHeading = styled(BodyHeadline)`
   color: ${blue};
   margin-top: 20px;
 `
@@ -21,7 +21,7 @@ const Donation = styled.div`
   display: flex;
 `
 
-const DonationAmount = Paragraph.extend`
+const DonationAmount = styled(Paragraph)`
   flex: 0 0 auto;
   width: 70px;
   font-size: 22px;
@@ -30,7 +30,7 @@ const DonationAmount = Paragraph.extend`
   text-align: right;
 `
 
-const DonationDescription = Paragraph.extend``
+const DonationDescription = styled(Paragraph)``
 
 const NewsItem = styled.a`
   text-decoration: none;
