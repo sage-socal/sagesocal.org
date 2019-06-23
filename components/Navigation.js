@@ -27,7 +27,7 @@ const PageLink = withRouter(styled.a`
   font-family: 'Avenir', Helvetica, sans-serif;
   font-size: 15px;
   margin: 8px;
-  color: ${green};
+  color: ${blue};
   border-bottom: none;
   ${props =>
     props.active &&
@@ -44,7 +44,7 @@ const PageLink = withRouter(styled.a`
 		padding-bottom: 10px;
 		margin-bottom: 5px;
 		border-bottom: ${props =>
-      (props.active && `3px solid ${green};`) || `3px solid white;`};
+      (props.active && `3px solid ${blue};`) || `3px solid white;`};
 
 	`};
 `)
