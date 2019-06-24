@@ -68,9 +68,9 @@ export default () => (
         <LargeHeading>Contact us.</LargeHeading>
         <Paragraph>
           If you are school personnel or a parent and want to know more about
-          CASSY services, are interested in either employment or volunteer
+          Sage services, are interested in either employment or volunteer
           opportunities, or want more information about how to best support
-          CASSY’s work, please call or email us.
+          Sage's work, please call or email us.
         </Paragraph>
       </Column>
     </Blurb>
@@ -84,7 +84,7 @@ export default () => (
         <Contact primary>
           (650) 799-5266
           <br />
-          lizschoeben@cassysocal.org
+          lizschoeben@sagesocal.org
         </Contact>
       </Column>
     </Blurb>

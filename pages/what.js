@@ -59,7 +59,7 @@ export default () => (
     <CenterSection>
       <Column lg={10}>
         <SubHeadline>
-          CASSY provides comprehensive mental health services to all of our
+          Sage provides comprehensive mental health services to all of our
           partner schools. This includes counseling and proactive mental health
           education for students (including Special Education students),
           consultation and training for staff, and outreach to parents and the
@@ -77,7 +77,7 @@ export default () => (
           <ServiceTitle>Crisis Intervention and Treatment</ServiceTitle>
           <Paragraph>
             Sometimes a traumatic event, such as the death of a student, affects
-            the entire student body. For such a school-wide crisis, CASSY
+            the entire student body. For such a school-wide crisis, Sage
             identifies those in need, provides ongoing grief counseling and
             supports school staff.
           </Paragraph>
@@ -85,7 +85,7 @@ export default () => (
         <Service>
           <ServiceTitle>Peer Mediation</ServiceTitle>
           <Paragraph>
-            Using a 15-week conflict resolution program, CASSY trains student
+            Using a 15-week conflict resolution program, Sage trains student
             leaders to become peer mediators to assist in student conflicts on
             campus.
           </Paragraph>
@@ -95,7 +95,7 @@ export default () => (
         <Service>
           <ServiceTitle>Ongoing Counseling</ServiceTitle>
           <Paragraph>
-            CASSY provides individual, family and group counseling sessions
+            Sage provides individual, family and group counseling sessions
             on-campus during school hours. Group topics include Grief and Loss,
             Anger Management, Victims of Violence, and Social Skills Training.
           </Paragraph>
@@ -118,7 +118,7 @@ export default () => (
         <Service>
           <ServiceTitle>Staff Consultation</ServiceTitle>
           <Paragraph>
-            CASSY becomes an integral part of each school’s team. School staff
+            Sage becomes an integral part of each school’s team. School staff
             can freely consult with the on-campus therapists regarding
             disconcerting situations that they see in their classrooms, in the
             halls or anywhere.
@@ -138,7 +138,7 @@ export default () => (
         <Service>
           <ServiceTitle>Parent Consultation</ServiceTitle>
           <Paragraph>
-            CASSY therapists are experts in dealing with child/adolescent
+            Sage therapists are experts in dealing with child/adolescent
             behaviors and issues. We offer parents confidential consultations at
             the schools we serve, help them distinguish between normal and risky
             behaviors, and secure additional support when needed.
@@ -147,11 +147,11 @@ export default () => (
         <Service>
           <ServiceTitle>Community Outreach</ServiceTitle>
           <Paragraph>
-            CASSY provides parent education opportunities by giving
-            presentations and leading discussions about raising emotionally
-            healthy adolescents. These presentations include our proven Latino
-            Outreach program where the sessions are conducted in Spanish and
-            address specific cultural needs of Latino Community.
+            Sage provides parent education opportunities by giving presentations
+            and leading discussions about raising emotionally healthy
+            adolescents. These presentations include our proven Latino Outreach
+            program where the sessions are conducted in Spanish and address
+            specific cultural needs of Latino Community.
           </Paragraph>
         </Service>
       </Column>
@@ -164,7 +164,7 @@ export default () => (
           Measuring Success
         </SectionTitle>
         <Paragraph style={{ textAlign: 'center', fontSize: 22, color: white }}>
-          CASSY collaborates with school partners to measure the success of our
+          Sage collaborates with school partners to measure the success of our
           services. We use a mix of the following quantitative and qualitative
           tools and metrics to measure the efficacy of our programs:
         </Paragraph>
@@ -189,7 +189,7 @@ export default () => (
             functioning. The scoring on the scales ranges from positive mental
             health to severe psychopathology. Using a number system from 1 to
             100, the CGAS assesses daily functioning and behaviors such as
-            personal hygiene habits, sleep patterns and risk for suicide. CASSY
+            personal hygiene habits, sleep patterns and risk for suicide. Sage
             therapists assess students at the beginning and end of treatment,
             with the results compiled at the end. Our goal is to help students
             maintain or increase positive functioning in their daily life.
@@ -204,7 +204,7 @@ export default () => (
           <Paragraph>
             Studies show a link between students with mental health concerns,
             attendance rates, and ongoing disciplinary concerns. We anticipate
-            that students who work directly with CASSY therapists will show an
+            that students who work directly with Sage therapists will show an
             increase in their attendance rate and/or show a reduction in
             disciplinary referrals, if these concerns are present.
           </Paragraph>
@@ -240,7 +240,7 @@ export default () => (
           <BodyHeadline>Staff feedback</BodyHeadline>
           <Paragraph>
             We invite staff to complete a feedback form for students they refer
-            to CASSY.
+            to Sage.
           </Paragraph>
         </Service>
       </Column>

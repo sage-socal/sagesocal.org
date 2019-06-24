@@ -15,7 +15,7 @@ export default class Index extends Component {
       <Base>
         <Row>
           <Column>
-            <LargeHeading>CASSY Southern California</LargeHeading>
+            <LargeHeading>Sage</LargeHeading>
           </Column>
         </Row>
       </Base>

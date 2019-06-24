@@ -128,15 +128,15 @@ export default () => (
       </Column>
       <Column md={6}>
         <LargeHeading>
-          CASSY Offers Schools a Mental Health Safety Net
+          Sage Offers Schools a Mental Health Safety Net
         </LargeHeading>
         <Paragraph>
           We partner with schools to provide professional mental health services
           to students in their academic setting. Our therapists are conveniently
           located right on campus. All services are free to the student and
-          their parents. With CASSY, there are no cost, transportation, or
+          their parents. With Sage, there are no cost, transportation, or
           insurance barriers to prevent students from getting the help they
-          need. CASSY has proven that when you put highly qualified postgraduate
+          need. Sage has proven that when you put highly qualified postgraduate
           therapists on the school campus, students will come in and get help.
           In fact, 20-25% of the entire student body will come in. Some once or
           twice. Some every week for years. Being school-based is absolutely the
@@ -153,24 +153,23 @@ export default () => (
     </Section>
     <BlueSection>
       <Column md={8} mdShift={2}>
-        <WhiteSectionTitle>Introducing CASSY SoCal</WhiteSectionTitle>
+        <WhiteSectionTitle>Introducing Sage</WhiteSectionTitle>
         <WhiteParagraph>
-          CASSY (Counseling and Support Services for Youth) was founded in the
-          San Francisco Bay Area in 2009.{' '}
+          Sage was founded in the San Francisco Bay Area in 2009.{' '}
           <a href="http://cassybayarea.org">The agency</a> continues to do
           incredible work, providing a year-round mental health safety net for
           over 33,000 students at 43 schools in San Mateo and Santa Clara
           County.
         </WhiteParagraph>
         <WhiteParagraph>
-          In the Fall of 2017, Liz Schoeben, CASSY Co-Founder, decided to take
-          the CASSY concept to Southern California. We have created CASSY
-          Southern California, A Project of Impact Philanthropy Group.
+          In the Fall of 2017, Liz Schoeben, Sage Co-Founder, decided to take
+          the Sage concept to Southern California. We have created Sage Southern
+          California, A Project of Impact Philanthropy Group.
         </WhiteParagraph>
         <WhiteParagraph>
-          Building on CASSY’s mission and core principles, CASSY SoCal offers
-          the highest commitment to supporting the social and emotional needs of
-          the youth in the communities in Southern California.
+          Building on Sage's mission and core principles, Sage offers the
+          highest commitment to supporting the social and emotional needs of the
+          youth in the communities in Southern California.
         </WhiteParagraph>
         <WhiteParagraph>
           Our initial partnership is with The Palos Verdes Peninsula Unified
@@ -219,7 +218,7 @@ export default () => (
         <Paragraph>
           The only way to achieve our shared goals is to create a strong working
           relationship between our agency and the school. To do so, we set up
-          shop right on campus and integrate the CASSY team with the school’s
+          shop right on campus and integrate the Sage team with the school’s
           staff. Together, we create a mental health resource team that is as
           much a part of the school as the guidance department and special
           education.
@@ -258,7 +257,7 @@ export default () => (
           than using our clients’ issues to train inexperienced therapists. We
           believe the right approach is to pay for high quality therapists,
           mentor them in their professional growth and give them a long-term
-          career path at CASSY.
+          career path at Sage.
         </Paragraph>
       </Column>
     </PrincipleSection>
