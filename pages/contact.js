@@ -16,11 +16,11 @@ const Blurb = styled(Section)`
 
 const Person = styled(BodyHeadline)`
   color: ${blue};
-  font-size: 22px;
+  font-size: 26px;
   text-align: center;
   ${media.md`
 		text-align: left;
-		font-size: ${props => (props.primary ? `28px` : `24px`)};
+		font-size: ${props => (props.primary ? `32px` : `26px`)};
 	`};
 `
 
@@ -31,7 +31,7 @@ const PersonTitle = styled(BodyHeadline)`
   font-weight: 400;
   ${media.md`
 		text-align: left;
-		font-size: ${props => (props.primary ? `22px` : `18px`)};
+		font-size: ${props => (props.primary ? `26px` : `18px`)};
 	`};
 `
 
@@ -83,9 +83,9 @@ export default () => (
         <Person primary>Liz Schoeben, MFT</Person>
         <PersonTitle primary>Executive Director</PersonTitle>
         <Contact primary>
-          (650) 799-5266
-          <br />
           lizschoeben@sagesocal.org
+          <br />
+          (650) 799-5266
         </Contact>
       </Column>
     </Blurb>
@@ -97,9 +97,9 @@ export default () => (
         <Person primary>Kathi Colli, MFT</Person>
         <PersonTitle primary>Clinical Director</PersonTitle>
         <Contact primary>
-          (424) 262-0896
-          <br />
           collik@pvpusd.net
+          <br />
+          (424) 262-0896
         </Contact>
       </Column>
     </Blurb>
