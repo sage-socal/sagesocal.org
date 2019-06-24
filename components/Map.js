@@ -11,7 +11,7 @@ export default compose(
     googleMapURL:
       'https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAw9mDpLUaCKjOEEtEhJh6HyZmaw_eFZGg',
     loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `400px`, maxHeight: `66vw` }} />,
+    containerElement: <div style={{ height: `520px`, maxHeight: `66vw` }} />,
     mapElement: <div style={{ height: `100%` }} />
   }),
   withScriptjs,

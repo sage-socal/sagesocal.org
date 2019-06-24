@@ -2,12 +2,11 @@ import styled from 'styled-components'
 import { Page, Row } from 'hedron'
 import { white } from '../utils/colors'
 
-export const SagePage = styled(Page)`
-  background: ${white};
-  padding-bottom: 60px;
+export const PageSegment = styled(Page)`
+  background: ${props => (props.white ? white : 'none')};
   overflow: hidden;
-  width: 1200px;
-  margin-top: 40px;
+  width: ${props => props.width || 1200}px;
+  margin: 60px auto;
 `
 
 export const Section = styled(Row)`

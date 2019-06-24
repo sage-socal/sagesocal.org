@@ -6,13 +6,11 @@ import { stone } from '../utils/colors'
 const Content = styled.footer`
   font-family: 'Rubik', sans-serif;
   color: ${stone};
-  padding: 10px 0;
   text-align: center;
   font-size: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   ${media.md`
 		font-size: 16px;
-		padding: 20px 0;
 	`};
 `
 
