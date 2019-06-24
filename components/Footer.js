@@ -11,7 +11,7 @@ const Content = styled.footer`
   font-size: 12px;
   ${media.md`
 		font-size: 16px;
-		padding: 40px 0;
+		padding: 20px 0;
 	`};
 `
 

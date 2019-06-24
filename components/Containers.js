@@ -7,6 +7,7 @@ export const SagePage = styled(Page)`
   padding-bottom: 60px;
   overflow: hidden;
   width: 1200px;
+  margin-top: 40px;
 `
 
 export const Section = styled(Row)`

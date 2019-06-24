@@ -28,6 +28,7 @@ const PersonTitle = styled(BodyHeadline)`
   color: ${light};
   font-size: 18px;
   text-align: center;
+  font-weight: 400;
   ${media.md`
 		text-align: left;
 		font-size: ${props => (props.primary ? `22px` : `18px`)};
@@ -65,8 +66,8 @@ export default () => (
     <Blurb>
       <Column lg={8}>
         <Paragraph />
-        <LargeHeading>Contact us.</LargeHeading>
-        <Paragraph>
+        <LargeHeading style={{ fontSize: 62 }}>Contact us.</LargeHeading>
+        <Paragraph style={{ fontSize: 26 }}>
           If you are school personnel or a parent and want to know more about
           Sage services, are interested in either employment or volunteer
           opportunities, or want more information about how to best support
@@ -78,7 +79,7 @@ export default () => (
       <Column md={4} lg={2}>
         <CircleImage src="/static/images/liz-schoeben.jpg" />
       </Column>
-      <Column md={6} lg={4}>
+      <Column md={6} lg={6}>
         <Person primary>Liz Schoeben, MFT</Person>
         <PersonTitle primary>Executive Director</PersonTitle>
         <Contact primary>
@@ -92,7 +93,7 @@ export default () => (
       <Column md={4} lg={2}>
         <CircleImage src="/static/images/kathi-colli.jpg" />
       </Column>
-      <Column md={6} lg={4}>
+      <Column md={6} lg={6}>
         <Person primary>Kathi Colli, MFT</Person>
         <PersonTitle primary>Clinical Director</PersonTitle>
         <Contact primary>

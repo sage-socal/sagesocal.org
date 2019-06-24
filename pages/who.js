@@ -67,8 +67,9 @@ const OrangeBox = styled.div`
   border: 3px ${orange} solid;
 `
 const Number = styled.h3`
-  color: ${tint(0.2, stone)};
-  font-family: 'Avenir', Helvetica, sans-serif;
+  color: ${stone};
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
   margin: 0;
   text-align: center;
   font-size: 32px;

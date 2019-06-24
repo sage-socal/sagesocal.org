@@ -28,7 +28,6 @@ export const SubHeadline = styled.h2`
   font-family: 'Rubik', sans-serif;
   margin: 10px 0;
   color: ${light};
-
   ${media.md`
 		font-size: 28px;
 	`};
@@ -37,7 +36,7 @@ export const SubHeadline = styled.h2`
 export const BodyHeadline = styled.h3`
   line-height: 1.4;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 700;
   font-family: 'Rubik', sans-serif;
   margin: 0;
   color: ${orange};
