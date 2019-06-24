@@ -1,30 +1,28 @@
 import React from 'react'
 import Base from '../components/Base'
-import { Row, Column } from 'hedron'
+import { Column } from 'hedron'
 import { BodyHeadline, LargeHeading, Paragraph } from '../components/Text'
 import { Section } from '../components/Containers'
 import styled from 'styled-components'
-import { blue, stone } from '../utils/colors'
+import { blue } from '../utils/colors'
 import Map from '../components/Map'
-import Head from 'next/head'
+import PageTitle from '../components/PageTitle'
 
 const School = styled.div``
-const CenterSection = Section.extend`
+const CenterSection = styled(Section)`
   justify-content: center;
 `
-const SchoolName = BodyHeadline.extend`
+const SchoolName = styled(BodyHeadline)`
   color: ${blue};
 `
-const Address = Paragraph.extend`
+const Address = styled(Paragraph)`
   margin: 5px 0;
   font-size: 18px;
 `
 
 export default () => (
   <Base page="where">
-    <Head>
-      <title>CASSY SoCal / Where We Do It</title>
-    </Head>
+    <PageTitle name="Where We Do It" />
     <Map />
     <CenterSection>
       <Column>
@@ -36,7 +34,9 @@ export default () => (
         <School>
           <SchoolName>Rancho del Mar High School</SchoolName>
           <Address>
-            38 Crest Road West<br />Rolling Hills, CA 90274
+            38 Crest Road West
+            <br />
+            Rolling Hills, CA 90274
           </Address>
         </School>
       </Column>
@@ -44,17 +44,23 @@ export default () => (
         <School>
           <SchoolName>Palos Verdes High School</SchoolName>
           <Address>
-            600 Cloyden Rd<br />Palos Verdes Estates, CA 90274
+            600 Cloyden Rd
+            <br />
+            Palos Verdes Estates, CA 90274
           </Address>
         </School>
       </Column>
       <Column md={6} lg={4}>
         <School>
           <SchoolName>
-            Palos Verdes Peninsula<br />High School
+            Palos Verdes Peninsula
+            <br />
+            High School
           </SchoolName>
           <Address>
-            27118 Silver Spur Rd<br />Rolling Hls Estates, CA 90274
+            27118 Silver Spur Rd
+            <br />
+            Rolling Hls Estates, CA 90274
           </Address>
         </School>
       </Column>
@@ -69,7 +75,9 @@ export default () => (
         <School>
           <SchoolName>Miraleste Intermediate School</SchoolName>
           <Address>
-            29323 Palos Verdes Drive East<br />Rancho Palos Verdes, CA 90275
+            29323 Palos Verdes Drive East
+            <br />
+            Rancho Palos Verdes, CA 90275
           </Address>
         </School>
       </Column>
@@ -77,7 +85,9 @@ export default () => (
         <School>
           <SchoolName>Palos Verdes Intermediate School</SchoolName>
           <Address>
-            2161 Via Olivera<br />Palos Verdes Estates, CA 90274
+            2161 Via Olivera
+            <br />
+            Palos Verdes Estates, CA 90274
           </Address>
         </School>
       </Column>
@@ -85,7 +95,9 @@ export default () => (
         <School>
           <SchoolName>Ridgecrest Intermediate School</SchoolName>
           <Address>
-            28915 Northbay Road<br />Rancho Palos Verdes, CA 90275
+            28915 Northbay Road
+            <br />
+            Rancho Palos Verdes, CA 90275
           </Address>
         </School>
       </Column>
@@ -100,7 +112,9 @@ export default () => (
         <School>
           <SchoolName>Cornerstone Elementary</SchoolName>
           <Address>
-            6069 Groveoak Pl<br />Rancho Palos Verdes, CA 90275
+            6069 Groveoak Pl
+            <br />
+            Rancho Palos Verdes, CA 90275
           </Address>
         </School>
       </Column>
@@ -108,7 +122,8 @@ export default () => (
         <School>
           <SchoolName>Dapplegray Elementary</SchoolName>
           <Address>
-            3011 Palos Verdes Dr N<br />Rolling Hills Estates, CA 90274
+            3011 Palos Verdes Dr N<br />
+            Rolling Hills Estates, CA 90274
           </Address>
         </School>
       </Column>
@@ -116,7 +131,8 @@ export default () => (
         <School>
           <SchoolName>Mira Catalina Elementary</SchoolName>
           <Address>
-            30511 Lucania Dr<br /> Rancho Palos Verdes, CA 90275
+            30511 Lucania Dr
+            <br /> Rancho Palos Verdes, CA 90275
           </Address>
         </School>
       </Column>
@@ -124,7 +140,8 @@ export default () => (
         <School>
           <SchoolName>Lunada Bay Elementary</SchoolName>
           <Address>
-            520 Paseo Lunado<br /> Palos Verdes Estates, CA 90274
+            520 Paseo Lunado
+            <br /> Palos Verdes Estates, CA 90274
           </Address>
         </School>
       </Column>
@@ -132,7 +149,9 @@ export default () => (
         <School>
           <SchoolName>Montemalaga Elementary</SchoolName>
           <Address>
-            1121 Vía Nogales<br />Palos Verdes Estates, CA 90274
+            1121 Vía Nogales
+            <br />
+            Palos Verdes Estates, CA 90274
           </Address>
         </School>
       </Column>
@@ -140,7 +159,9 @@ export default () => (
         <School>
           <SchoolName>Point Vicente Elementary</SchoolName>
           <Address>
-            30540 Rue De La Pierre<br />Rancho Palos Verdes, CA 90275
+            30540 Rue De La Pierre
+            <br />
+            Rancho Palos Verdes, CA 90275
           </Address>
         </School>
       </Column>
@@ -156,7 +177,9 @@ export default () => (
         <School>
           <SchoolName>Silver Spur Elementary</SchoolName>
           <Address>
-            5500 Ironwood St<br />Rancho Palos Verdes, CA 90275
+            5500 Ironwood St
+            <br />
+            Rancho Palos Verdes, CA 90275
           </Address>
         </School>
       </Column>
@@ -164,7 +187,9 @@ export default () => (
         <School>
           <SchoolName>Soleado Elementary</SchoolName>
           <Address>
-            27800 Longhill Dr<br />Rancho Palos Verdes, CA 90275
+            27800 Longhill Dr
+            <br />
+            Rancho Palos Verdes, CA 90275
           </Address>
         </School>
       </Column>
@@ -172,7 +197,9 @@ export default () => (
         <School>
           <SchoolName>Vista Grande Elementary</SchoolName>
           <Address>
-            7032 Purple Ridge Dr<br />Rancho Palos Verdes, CA 90275
+            7032 Purple Ridge Dr
+            <br />
+            Rancho Palos Verdes, CA 90275
           </Address>
         </School>
       </Column>

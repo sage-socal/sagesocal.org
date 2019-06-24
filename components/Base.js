@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import { CASSYPage } from './Containers'
+import { SagePage } from './Containers'
 import Header from './Header'
 import Footer from './Footer'
 import ReactGA from 'react-ga'
@@ -21,10 +21,10 @@ export default class Base extends PureComponent {
   render() {
     return (
       <div>
-        <CASSYPage width="1200px">
+        <SagePage>
           <Header page={this.props.page} />
           {this.props.children}
-        </CASSYPage>
+        </SagePage>
         <Footer />
       </div>
     )

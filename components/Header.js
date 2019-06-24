@@ -1,24 +1,24 @@
 import { Row, Column } from 'hedron'
 import Navigation from './Navigation'
 
-const Wrap = Row.extend`
-  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
-`
-
 export default ({ page }) => (
-  <Wrap>
+  <Row>
     <Column>
       <Navigation
-        logo="/static/logo-socal-sm.png"
+        logo="/static/logo.png"
         active={page}
         pages={[
-          { path: '/who', title: 'Who We Are' },
-          { path: '/what', title: 'What We Do' },
-          { path: '/where', title: 'Where We Do It' },
-          { path: '/contact', title: 'Contact Us' },
-          { path: '/donate', title: 'Donate Now' }
+          { path: '/who', title: 'Who We Are', external: false },
+          { path: '/what', title: 'What We Do', external: false },
+          { path: '/where', title: 'Where We Do It', external: false },
+          { path: '/contact', title: 'Contact Us', external: false },
+          {
+            path: 'https://www.paypal.com/fundraiser/charity/3392177',
+            title: 'Donate Now',
+            external: true
+          }
         ]}
       />
     </Column>
-  </Wrap>
+  </Row>
 )

@@ -1,6 +1,6 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import Link from 'next/link'
-import { green, orange, blue } from '../utils/colors'
+import { blue, stone } from '../utils/colors'
 import { tint } from 'polished'
 import { withRouter } from 'next/router'
 import { media } from '../utils/style-utils'
@@ -24,28 +24,21 @@ const PageLink = withRouter(styled.a`
   display: inline-block;
   text-decoration: none;
   font-weight: 500;
-  font-family: 'Avenir', Helvetica, sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 15px;
-  margin: 8px;
-  color: ${green};
+  padding: 4px 16px;
+  margin: 0px;
+  color: ${blue};
   border-bottom: none;
-  ${props =>
-    props.active &&
-    `background-image: linear-gradient(-100deg, rgba(255, 255, 255, 0), ${tint(
-      0.45,
-      blue
-    )} 85%, rgba(255, 255, 255, 0));
-	`};
+  background-image: ${props =>
+    props.active
+      ? `linear-gradient(-100deg, rgba(255, 255, 255, 0), ${tint(
+          0.75,
+          stone
+        )} 85%, rgba(255, 255, 255, 0))`
+      : `none`};
   ${media.md`
-		background: none;
-		font-size: 20px;
-		margin: 15px;
-		margin-bottom: 0;
-		padding-bottom: 10px;
-		margin-bottom: 5px;
-		border-bottom: ${props =>
-      (props.active && `3px solid ${green};`) || `3px solid white;`};
-
+		font-size: 24px;
 	`};
 `)
 
@@ -68,8 +61,18 @@ export default ({ logo, pages, active }) => (
     </Link>
     <NavBar>
       {pages.map(page => (
-        <Link key={page.path} href={page.path} prefetch passHref>
-          <PageLink active={page.path === '/' + active}>{page.title}</PageLink>
+        <Link
+          key={page.path}
+          href={page.path}
+          prefetch={!page.external}
+          passHref
+        >
+          <PageLink
+            target={page.external ? `_blank` : `_self`}
+            active={page.path === '/' + active}
+          >
+            {page.title}
+          </PageLink>
         </Link>
       ))}
     </NavBar>

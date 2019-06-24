@@ -1,6 +1,6 @@
 import React from 'react'
 import Base from '../components/Base'
-import { Row, Column } from 'hedron'
+import { Column } from 'hedron'
 import { Section, SubSection } from '../components/Containers'
 import {
   SectionTitle,
@@ -10,30 +10,39 @@ import {
   Paragraph
 } from '../components/Text'
 import { FitImage } from '../components/Media'
-import { orange, green, blue, white, beige, stone } from '../utils/colors'
+import { orange, blue, white, stone } from '../utils/colors'
 import styled from 'styled-components'
 import { tint } from 'polished'
-import Head from 'next/head'
 import { media } from '../utils/style-utils'
+import PageTitle from '../components/PageTitle'
 
-const MainImageSection = Section.extend`
+const MainImageSection = styled(Section)`
   background-size: cover;
   background-position: top center;
   background-image: url('/static/images/teenagers.jpg');
 `
-const WhiteLargeHeading = LargeHeading.extend`
+const WhiteLargeHeading = styled(LargeHeading)`
   color: ${white};
 `
-const WhiteSectionTitle = SectionTitle.extend`
+const WhiteSectionTitle = styled(SectionTitle)`
   margin-bottom: 20px;
   color: ${white};
 `
-const WhiteParagraph = Paragraph.extend`
+const WhiteParagraph = styled(Paragraph)`
+  font-size: 24px;
   color: ${white};
 `
-const BlueSection = Section.extend`
+const PrincipleHeadline = styled(BodyHeadline)`
+  line-height: 1.2;
+  font-size: 28px;
+  color: ${blue};
+`
+
+const BlueSection = styled(Section)`
   background-color: ${blue};
   position: relative;
+  padding: 100px 0;
+  margin: 20px 0;
   &:after {
     content: '';
     mix-blend-mode: luminosity;
@@ -53,10 +62,10 @@ const BlueSection = Section.extend`
     z-index: 5;
   }
 `
-const FlagSubSection = SubSection.extend`
-  background-color: rgba(63, 65, 51, 0.8);
+const FlagSubSection = styled(SubSection)`
+  background-color: ${stone};
 `
-const PrincipleSection = Section.extend`
+const PrincipleSection = styled(Section)`
   justify-content: center;
   padding: 0 20px;
 `
@@ -67,8 +76,9 @@ const OrangeBox = styled.div`
   border: 3px ${orange} solid;
 `
 const Number = styled.h3`
-  color: ${tint(0.2, stone)};
-  font-family: 'Avenir', Helvetica, sans-serif;
+  color: ${stone};
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
   margin: 0;
   text-align: center;
   font-size: 32px;
@@ -83,9 +93,7 @@ const Number = styled.h3`
 
 export default () => (
   <Base page="who">
-    <Head>
-      <title>CASSY SoCal / Who We Are</title>
-    </Head>
+    <PageTitle name="Who We Are" />
     <MainImageSection>
       <Column md={6} mdShift={6} lg={5} lgShift={7}>
         <FlagSubSection>
@@ -130,15 +138,15 @@ export default () => (
       </Column>
       <Column md={6}>
         <LargeHeading>
-          CASSY Offers Schools a Mental Health Safety Net
+          Sage Offers Schools a Mental Health Safety Net
         </LargeHeading>
         <Paragraph>
           We partner with schools to provide professional mental health services
           to students in their academic setting. Our therapists are conveniently
           located right on campus. All services are free to the student and
-          their parents. With CASSY, there are no cost, transportation, or
+          their parents. With Sage, there are no cost, transportation, or
           insurance barriers to prevent students from getting the help they
-          need. CASSY has proven that when you put highly qualified postgraduate
+          need. Sage has proven that when you put highly qualified postgraduate
           therapists on the school campus, students will come in and get help.
           In fact, 20-25% of the entire student body will come in. Some once or
           twice. Some every week for years. Being school-based is absolutely the
@@ -155,35 +163,21 @@ export default () => (
     </Section>
     <BlueSection>
       <Column md={8} mdShift={2}>
-        <WhiteSectionTitle>Introducing CASSY SoCal</WhiteSectionTitle>
+        <WhiteSectionTitle>Introducing Sage</WhiteSectionTitle>
         <WhiteParagraph>
-          CASSY (Counseling and Support Services for Youth) was founded in the
-          San Francisco Bay Area in 2009.{' '}
-          <a href="http://cassybayarea.org">The agency</a> continues to do
-          incredible work, providing a year-round mental health safety net for
-          over 33,000 students at 43 schools in San Mateo and Santa Clara
-          County.
-        </WhiteParagraph>
-        <WhiteParagraph>
-          In the Fall of 2017, Liz Schoeben, CASSY Co-Founder, decided to take
-          the CASSY concept to Southern California. We have created CASSY
-          Southern California, A Project of Impact Philanthropy Group.
-        </WhiteParagraph>
-        <WhiteParagraph>
-          Building on CASSY’s mission and core principles, CASSY SoCal offers
-          the highest commitment to supporting the social and emotional needs of
-          the youth in the communities in Southern California.
-        </WhiteParagraph>
-        <WhiteParagraph>
-          Our initial partnership is with The Palos Verdes Peninsula Unified
-          School District, providing support at their 10 elementary sites and
-          two comprehensive high schools in the district.
+          Sage’s story began in 2009 when Liz Schoeben founded CASSY, a non
+          profit agency in the San Francisco Bay Area. CASSY currently partners
+          with over 60 schools in the San Francisco Bay Area to provide
+          comprehensive mental health services. In the fall of 2017, Liz
+          Schoeben decided to replicate the CASSY model to serve communities in
+          Southern California by creating Sage, a project of Impact Philanthropy
+          Group.
         </WhiteParagraph>
       </Column>
     </BlueSection>
     <Section style={{ justifyContent: 'center', paddingBottom: 0 }}>
       <Column md={8}>
-        <SectionTitle style={{ textAlign: 'center' }}>
+        <SectionTitle style={{ fontSize: 62, textAlign: 'center' }}>
           Our Guiding Principles
         </SectionTitle>
         <SubHeadline style={{ textAlign: 'center' }}>
@@ -197,9 +191,9 @@ export default () => (
         <Number>#1</Number>
       </Column>
       <Column md={8}>
-        <BodyHeadline>
+        <PrincipleHeadline>
           Be available to help all students, regardless of their ability to pay.
-        </BodyHeadline>
+        </PrincipleHeadline>
         <Paragraph>
           We serve financially disenfranchised communities where free services
           at school are the only realistic way to reach kids. We also serve
@@ -214,14 +208,14 @@ export default () => (
         <Number>#2</Number>
       </Column>
       <Column md={8}>
-        <BodyHeadline>
+        <PrincipleHeadline>
           Partner with schools to make mental health a key part of the
           educational process.
-        </BodyHeadline>
+        </PrincipleHeadline>
         <Paragraph>
           The only way to achieve our shared goals is to create a strong working
           relationship between our agency and the school. To do so, we set up
-          shop right on campus and integrate the CASSY team with the school’s
+          shop right on campus and integrate the Sage team with the school’s
           staff. Together, we create a mental health resource team that is as
           much a part of the school as the guidance department and special
           education.
@@ -233,10 +227,10 @@ export default () => (
         <Number>#3</Number>
       </Column>
       <Column md={8}>
-        <BodyHeadline>
+        <PrincipleHeadline>
           Tailor our programs to meet the unique needs of the population we will
           serve.
-        </BodyHeadline>
+        </PrincipleHeadline>
         <Paragraph>
           We factor in the unique characteristics of a given school when
           creating any new program. For example, our staffing for a
@@ -251,16 +245,16 @@ export default () => (
         <Number>#4</Number>
       </Column>
       <Column md={8}>
-        <BodyHeadline>
+        <PrincipleHeadline>
           Hire, train and mentor professional therapists who love working with
           youth.
-        </BodyHeadline>
+        </PrincipleHeadline>
         <Paragraph>
           We use experienced therapists to tackle our clients’ issues rather
           than using our clients’ issues to train inexperienced therapists. We
           believe the right approach is to pay for high quality therapists,
           mentor them in their professional growth and give them a long-term
-          career path at CASSY.
+          career path at Sage.
         </Paragraph>
       </Column>
     </PrincipleSection>
@@ -269,7 +263,7 @@ export default () => (
         <Number>#5</Number>
       </Column>
       <Column md={8}>
-        <BodyHeadline>Commit to making a difference.</BodyHeadline>
+        <PrincipleHeadline>Commit to making a difference.</PrincipleHeadline>
         <Paragraph>
           We take great pride in improving the lives of the students we support.
           We will always see each case through whether we handle it internally,
