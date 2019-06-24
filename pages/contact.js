@@ -9,6 +9,7 @@ import { media } from '../utils/style-utils'
 import { tint } from 'polished'
 import Head from 'next/head'
 import styled from 'styled-components'
+import PageTitle from '../components/PageTitle'
 
 const Blurb = styled(Section)`
   justify-content: center;
@@ -61,9 +62,7 @@ const CircleImage = styled(FitImage)`
 
 export default () => (
   <Base page="contact">
-    <Head>
-      <title>CASSY SoCal / Contact</title>
-    </Head>
+    <PageTitle name="Contact Us" />
     <Blurb>
       <Column lg={8}>
         <Paragraph />

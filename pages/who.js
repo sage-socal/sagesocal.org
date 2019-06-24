@@ -13,8 +13,8 @@ import { FitImage } from '../components/Media'
 import { orange, green, blue, white, beige, stone } from '../utils/colors'
 import styled from 'styled-components'
 import { tint } from 'polished'
-import Head from 'next/head'
 import { media } from '../utils/style-utils'
+import PageTitle from '../components/PageTitle'
 
 const MainImageSection = styled(Section)`
   background-size: cover;
@@ -83,9 +83,7 @@ const Number = styled.h3`
 
 export default () => (
   <Base page="who">
-    <Head>
-      <title>CASSY SoCal / Who We Are</title>
-    </Head>
+    <PageTitle name="Who We Are" />
     <MainImageSection>
       <Column md={6} mdShift={6} lg={5} lgShift={7}>
         <FlagSubSection>

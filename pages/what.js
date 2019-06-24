@@ -13,6 +13,7 @@ import { orange, yellow, blue, white, stone } from '../utils/colors'
 import styled from 'styled-components'
 import Head from 'next/head'
 import { media } from '../utils/style-utils'
+import PageTitle from '../components/PageTitle'
 
 const MainImageSection = styled(Section)`
   background-size: cover;
@@ -54,9 +55,7 @@ const GradientSection = styled(Section)`
 
 export default () => (
   <Base page="what">
-    <Head>
-      <title>CASSY SoCal / What We Do</title>
-    </Head>
+    <PageTitle name="What We Do" />
     <MainImageSection />
     <CenterSection>
       <Column lg={10}>

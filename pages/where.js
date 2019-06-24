@@ -7,6 +7,7 @@ import styled from 'styled-components'
 import { blue, stone } from '../utils/colors'
 import Map from '../components/Map'
 import Head from 'next/head'
+import PageTitle from '../components/PageTitle'
 
 const School = styled.div``
 const CenterSection = styled(Section)`
@@ -22,9 +23,7 @@ const Address = styled(Paragraph)`
 
 export default () => (
   <Base page="where">
-    <Head>
-      <title>CASSY SoCal / Where We Do It</title>
-    </Head>
+    <PageTitle name="Where We Do It" />
     <Map />
     <CenterSection>
       <Column>
