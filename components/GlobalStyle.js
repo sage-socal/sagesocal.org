@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import { chalk, stone } from '../utils/colors'
+import { chalk, white } from '../utils/colors'
 import { darken } from 'polished'
 
 const SageGlobalStyle = createGlobalStyle`
@@ -8,7 +8,8 @@ const SageGlobalStyle = createGlobalStyle`
 	}
 
 	body {
-		background-color: ${chalk};
+		background: linear-gradient(${white} 0px, ${white} 120px, ${chalk} 600px) fixed;
+		background-color: ${white};
 	}
 `
 

@@ -9,18 +9,18 @@ import {
   BodyHeadline,
   Paragraph
 } from '../components/Text'
-import { stone, blue, white, light } from '../utils/colors'
+import { blue, white, light } from '../utils/colors'
 import styled from 'styled-components'
 import { media } from '../utils/style-utils'
 import PageTitle from '../components/PageTitle'
 
 const MainImageSection = styled(Section)`
   background-size: cover;
-  background-image: url('/static/images/main-what.jpg');
+  background-image: url('/static/images/teens-bonding.jpg');
   background-position: center center;
-  height: 320px;
+  height: 380px;
   ${media.md`
-		height: 480px;
+		height: 520px;
 	`};
 `
 const FlagSubSection = styled(SubSection)`
