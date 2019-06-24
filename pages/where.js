@@ -1,16 +1,15 @@
 import React from 'react'
 import Base from '../components/Base'
-import { Row, Column } from 'hedron'
+import { Column } from 'hedron'
 import { BodyHeadline, LargeHeading, Paragraph } from '../components/Text'
 import { Section } from '../components/Containers'
 import styled from 'styled-components'
-import { blue, stone } from '../utils/colors'
+import { blue } from '../utils/colors'
 import Map from '../components/Map'
-import Head from 'next/head'
 import PageTitle from '../components/PageTitle'
 
 const School = styled.div``
-const CenterSection = styled(Section)`
+const CenterSection = styled(Sectsion)`
   justify-content: center;
 `
 const SchoolName = styled(BodyHeadline)`

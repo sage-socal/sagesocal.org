@@ -1,6 +1,6 @@
 import React from 'react'
 import Base from '../components/Base'
-import { Row, Column } from 'hedron'
+import { Column } from 'hedron'
 import { Section, SubSection } from '../components/Containers'
 import {
   SectionTitle,
@@ -10,7 +10,7 @@ import {
   Paragraph
 } from '../components/Text'
 import { FitImage } from '../components/Media'
-import { orange, green, blue, white, beige, stone } from '../utils/colors'
+import { orange, blue, white, stone } from '../utils/colors'
 import styled from 'styled-components'
 import { tint } from 'polished'
 import { media } from '../utils/style-utils'

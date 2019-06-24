@@ -3,7 +3,7 @@ import redirect from 'next-redirect'
 
 import Base from '../components/Base'
 import { Row, Column } from 'hedron'
-import { LargeHeading, Paragraph } from '../components/Text'
+import { LargeHeading } from '../components/Text'
 
 export default class Index extends Component {
   static getInitialProps(ctx) {

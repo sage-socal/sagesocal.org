@@ -1,6 +1,6 @@
 import React from 'react'
 import Base from '../components/Base'
-import { Row, Column } from 'hedron'
+import { Column } from 'hedron'
 import { Section, SubSection } from '../components/Containers'
 import {
   SectionTitle,
@@ -9,9 +9,8 @@ import {
   BodyHeadline,
   Paragraph
 } from '../components/Text'
-import { orange, yellow, blue, white, stone } from '../utils/colors'
+import { yellow, blue, white } from '../utils/colors'
 import styled from 'styled-components'
-import Head from 'next/head'
 import { media } from '../utils/style-utils'
 import PageTitle from '../components/PageTitle'
 
