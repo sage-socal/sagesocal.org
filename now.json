@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "sagesocal.org",
+  "alias": "sagesocal.org",
   "builds": [
     {
       "src": "next.config.js",
