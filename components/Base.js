@@ -21,7 +21,7 @@ export default class Base extends PureComponent {
   render() {
     return (
       <>
-        <PageSegment>
+        <PageSegment style={{ margin: 'auto', marginTop: 20 }}>
           <Header page={this.props.page} />
         </PageSegment>
         {this.props.children}

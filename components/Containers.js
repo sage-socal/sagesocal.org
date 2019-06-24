@@ -6,7 +6,7 @@ export const PageSegment = styled(Page)`
   background: ${props => (props.white ? white : 'none')};
   overflow: hidden;
   width: ${props => props.width || 1200}px;
-  margin: 20px auto;
+  margin: 60px auto;
 `
 
 export const Section = styled(Row)`

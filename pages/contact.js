@@ -2,11 +2,10 @@ import React from 'react'
 import Base from '../components/Base'
 import { Column } from 'hedron'
 import { FitImage } from '../components/Media'
-import { Section } from '../components/Containers'
+import { Section, PageSegment } from '../components/Containers'
 import { LargeHeading, Paragraph, BodyHeadline } from '../components/Text'
-import { blue, stone, light } from '../utils/colors'
+import { blue, light } from '../utils/colors'
 import { media } from '../utils/style-utils'
-import { tint } from 'polished'
 import styled from 'styled-components'
 import PageTitle from '../components/PageTitle'
 
@@ -63,45 +62,50 @@ const CircleImage = styled(FitImage)`
 export default () => (
   <Base page="contact">
     <PageTitle name="Contact Us" />
-    <Blurb>
-      <Column lg={8}>
-        <Paragraph />
-        <LargeHeading style={{ fontSize: 62 }}>Contact us.</LargeHeading>
-        <Paragraph style={{ fontSize: 26 }}>
-          If you are school personnel or a parent and want to know more about
-          Sage services, are interested in either employment or volunteer
-          opportunities, or want more information about how to best support
-          Sage's work, please call or email us.
-        </Paragraph>
-      </Column>
-    </Blurb>
-    <Blurb>
-      <Column md={4} lg={2}>
-        <CircleImage src="/static/images/liz-schoeben.jpg" />
-      </Column>
-      <Column md={6} lg={6}>
-        <Person primary>Liz Schoeben, MFT</Person>
-        <PersonTitle primary>Executive Director</PersonTitle>
-        <Contact primary>
-          lizschoeben@sagesocal.org
-          <br />
-          (650) 799-5266
-        </Contact>
-      </Column>
-    </Blurb>
-    <Blurb>
-      <Column md={4} lg={2}>
-        <CircleImage src="/static/images/kathi-colli.jpg" />
-      </Column>
-      <Column md={6} lg={6}>
-        <Person primary>Kathi Colli, MFT</Person>
-        <PersonTitle primary>Clinical Director</PersonTitle>
-        <Contact primary>
-          collik@pvpusd.net
-          <br />
-          (424) 262-0896
-        </Contact>
-      </Column>
-    </Blurb>
+    <PageSegment
+      white
+      style={{ marginTop: 20, paddingTop: 40, paddingBottom: 40 }}
+    >
+      <Blurb>
+        <Column lg={8}>
+          <Paragraph />
+          <LargeHeading style={{ fontSize: 62 }}>Contact us.</LargeHeading>
+          <Paragraph style={{ fontSize: 26 }}>
+            If you are school personnel or a parent and want to know more about
+            Sage services, are interested in either employment or volunteer
+            opportunities, or want more information about how to best support
+            Sage's work, please call or email us.
+          </Paragraph>
+        </Column>
+      </Blurb>
+      <Blurb>
+        <Column md={4} lg={2}>
+          <CircleImage src="/static/images/liz-schoeben.jpg" />
+        </Column>
+        <Column md={6} lg={6}>
+          <Person primary>Liz Schoeben, MFT</Person>
+          <PersonTitle primary>Executive Director</PersonTitle>
+          <Contact primary>
+            lizschoeben@sagesocal.org
+            <br />
+            (650) 799-5266
+          </Contact>
+        </Column>
+      </Blurb>
+      <Blurb>
+        <Column md={4} lg={2}>
+          <CircleImage src="/static/images/kathi-colli.jpg" />
+        </Column>
+        <Column md={6} lg={6}>
+          <Person primary>Kathi Colli, MFT</Person>
+          <PersonTitle primary>Clinical Director</PersonTitle>
+          <Contact primary>
+            collik@pvpusd.net
+            <br />
+            (424) 262-0896
+          </Contact>
+        </Column>
+      </Blurb>
+    </PageSegment>
   </Base>
 )

@@ -8,7 +8,7 @@ const SageGlobalStyle = createGlobalStyle`
 	}
 
 	body {
-		background: linear-gradient(${white} 0px, ${white} 120px, ${chalk} 600px) fixed;
+		background: linear-gradient(${white} 0px, ${white} 40px, ${chalk} 600px) fixed;
 		background-color: ${white};
 	}
 `

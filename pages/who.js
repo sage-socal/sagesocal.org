@@ -18,7 +18,8 @@ import PageTitle from '../components/PageTitle'
 
 const TopSection = styled(PageSegment)`
   position: relative;
-  margin-bottom: -260px;
+  margin: 20px auto;
+  margin-bottom: -300px;
 `
 const FlagSubSection = styled(SubSection)`
   background-color: ${stone};
@@ -52,7 +53,6 @@ const BlueSection = styled(Section)`
   background-color: ${blue};
   position: relative;
   padding: 100px 0;
-  margin: 20px 0;
   &:after {
     content: '';
     mix-blend-mode: luminosity;
@@ -143,6 +143,8 @@ export default () => (
           <FitImage src="/static/images/kid-help.jpg" />
         </Column>
       </Section>
+    </PageSegment>
+    <PageSegment white>
       <Section>
         <Column md={6}>
           <FitImage src="/static/images/students-group.jpg" />
