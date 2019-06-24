@@ -10,7 +10,7 @@ export const SectionTitle = styled.h1`
   margin: 0;
   color: ${orange};
   ${media.md`
-		font-size: 56px;
+		font-size: 62px;
 	`};
 `
 
@@ -34,8 +34,8 @@ export const SubHeadline = styled.h2`
 `
 
 export const BodyHeadline = styled.h3`
-  line-height: 1.4;
-  font-size: 24px;
+  line-height: 1.2;
+  font-size: 30px;
   font-weight: 700;
   font-family: 'Rubik', sans-serif;
   margin: 0;
@@ -43,10 +43,10 @@ export const BodyHeadline = styled.h3`
 `
 
 export const Paragraph = styled.p`
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   font-family: 'Rubik', sans-serif;
-  line-height: 1.4;
+  line-height: 1.5;
   color: ${dark};
   margin: 10px 0;
   a {

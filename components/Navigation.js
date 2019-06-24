@@ -33,12 +33,12 @@ const PageLink = withRouter(styled.a`
   background-image: ${props =>
     props.active
       ? `linear-gradient(-100deg, rgba(255, 255, 255, 0), ${tint(
-          0.5,
+          0.75,
           yellow
         )} 85%, rgba(255, 255, 255, 0))`
       : `none`};
   ${media.md`
-		font-size: 20px;
+		font-size: 24px;
 	`};
 `)
 

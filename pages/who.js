@@ -29,11 +29,20 @@ const WhiteSectionTitle = styled(SectionTitle)`
   color: ${white};
 `
 const WhiteParagraph = styled(Paragraph)`
+  font-size: 24px;
   color: ${white};
 `
+const PrincipleHeadline = styled(BodyHeadline)`
+  line-height: 1.2;
+  font-size: 28px;
+  color: ${blue};
+`
+
 const BlueSection = styled(Section)`
   background-color: ${blue};
   position: relative;
+  padding: 100px 0;
+  margin: 20px 0;
   &:after {
     content: '';
     mix-blend-mode: luminosity;
@@ -168,7 +177,7 @@ export default () => (
     </BlueSection>
     <Section style={{ justifyContent: 'center', paddingBottom: 0 }}>
       <Column md={8}>
-        <SectionTitle style={{ textAlign: 'center' }}>
+        <SectionTitle style={{ fontSize: 62, textAlign: 'center' }}>
           Our Guiding Principles
         </SectionTitle>
         <SubHeadline style={{ textAlign: 'center' }}>
@@ -182,9 +191,9 @@ export default () => (
         <Number>#1</Number>
       </Column>
       <Column md={8}>
-        <BodyHeadline>
+        <PrincipleHeadline>
           Be available to help all students, regardless of their ability to pay.
-        </BodyHeadline>
+        </PrincipleHeadline>
         <Paragraph>
           We serve financially disenfranchised communities where free services
           at school are the only realistic way to reach kids. We also serve
@@ -199,10 +208,10 @@ export default () => (
         <Number>#2</Number>
       </Column>
       <Column md={8}>
-        <BodyHeadline>
+        <PrincipleHeadline>
           Partner with schools to make mental health a key part of the
           educational process.
-        </BodyHeadline>
+        </PrincipleHeadline>
         <Paragraph>
           The only way to achieve our shared goals is to create a strong working
           relationship between our agency and the school. To do so, we set up
@@ -218,10 +227,10 @@ export default () => (
         <Number>#3</Number>
       </Column>
       <Column md={8}>
-        <BodyHeadline>
+        <PrincipleHeadline>
           Tailor our programs to meet the unique needs of the population we will
           serve.
-        </BodyHeadline>
+        </PrincipleHeadline>
         <Paragraph>
           We factor in the unique characteristics of a given school when
           creating any new program. For example, our staffing for a
@@ -236,10 +245,10 @@ export default () => (
         <Number>#4</Number>
       </Column>
       <Column md={8}>
-        <BodyHeadline>
+        <PrincipleHeadline>
           Hire, train and mentor professional therapists who love working with
           youth.
-        </BodyHeadline>
+        </PrincipleHeadline>
         <Paragraph>
           We use experienced therapists to tackle our clients’ issues rather
           than using our clients’ issues to train inexperienced therapists. We
@@ -254,7 +263,7 @@ export default () => (
         <Number>#5</Number>
       </Column>
       <Column md={8}>
-        <BodyHeadline>Commit to making a difference.</BodyHeadline>
+        <PrincipleHeadline>Commit to making a difference.</PrincipleHeadline>
         <Paragraph>
           We take great pride in improving the lives of the students we support.
           We will always see each case through whether we handle it internally,

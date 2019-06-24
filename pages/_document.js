@@ -33,7 +33,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link
-            href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i&display=swap"
+            href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,700,700i&display=swap"
             rel="stylesheet"
           />
         </Head>

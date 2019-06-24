@@ -9,8 +9,6 @@ const SageGlobalStyle = createGlobalStyle`
 
 	body {
 		background-color: ${chalk};
-		background-image: url('/static/cardboard-flat.png');
-		background-attachment: fixed;
 	}
 `
 

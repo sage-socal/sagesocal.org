@@ -9,7 +9,7 @@ import {
   BodyHeadline,
   Paragraph
 } from '../components/Text'
-import { yellow, blue, white } from '../utils/colors'
+import { stone, blue, white, light } from '../utils/colors'
 import styled from 'styled-components'
 import { media } from '../utils/style-utils'
 import PageTitle from '../components/PageTitle'
@@ -44,7 +44,6 @@ const Service = styled.div`
   margin: 20px 0;
 `
 const GradientSection = styled(Section)`
-  background: linear-gradient(${yellow} 0%, ${white} 100%);
   position: relative;
   justify-content: center;
   padding-bottom: 100px;
@@ -70,7 +69,7 @@ export default () => (
     </CenterSection>
     <CenterSection>
       <Column style={{ paddingBottom: 0 }} lg={10}>
-        <LargeHeading>For students…</LargeHeading>
+        <SectionTitle>For students…</SectionTitle>
       </Column>
       <Column style={{ paddingTop: 0 }} lg={5}>
         <Service>
@@ -114,7 +113,7 @@ export default () => (
     </CenterSection>
     <CenterSection>
       <Column lg={5}>
-        <LargeHeading>For staff…</LargeHeading>
+        <SectionTitle>For staff…</SectionTitle>
         <Service>
           <ServiceTitle>Staff Consultation</ServiceTitle>
           <Paragraph>
@@ -134,7 +133,7 @@ export default () => (
         </Service>
       </Column>
       <Column lg={5}>
-        <LargeHeading>For parents…</LargeHeading>
+        <SectionTitle>For parents…</SectionTitle>
         <Service>
           <ServiceTitle>Parent Consultation</ServiceTitle>
           <Paragraph>
@@ -156,31 +155,35 @@ export default () => (
         </Service>
       </Column>
     </CenterSection>
-    <GradientSection>
+    <CenterSection>
       <Column lg={8}>
         <SectionTitle
-          style={{ color: white, marginBottom: 20, textAlign: 'center' }}
+          style={{ fontSize: 62, marginBottom: 20, textAlign: 'center' }}
         >
           Measuring Success
         </SectionTitle>
-        <Paragraph style={{ textAlign: 'center', fontSize: 22, color: white }}>
+        <Paragraph style={{ textAlign: 'center', fontSize: 26 }}>
           Sage collaborates with school partners to measure the success of our
           services. We use a mix of the following quantitative and qualitative
           tools and metrics to measure the efficacy of our programs:
         </Paragraph>
       </Column>
-    </GradientSection>
-    <Section style={{ zIndex: 5, marginTop: 0 }}>
-      <Column>
+    </CenterSection>
+    <CenterSection style={{ zIndex: 5, marginTop: 0 }}>
+      <Column lg={10}>
         <LargeHeading
-          style={{ marginBottom: -25, textAlign: 'center', color: blue }}
+          style={{
+            marginBottom: -20,
+            fontWeight: 400,
+            color: light
+          }}
         >
           Quantitative
         </LargeHeading>
       </Column>
-      <Column lg={6}>
+      <Column lg={5}>
         <Service>
-          <BodyHeadline>Childrens Gloabal Assesment Scale</BodyHeadline>
+          <ServiceTitle>Childrens Gloabal Assesment Scale</ServiceTitle>
           <Paragraph>
             The Children’s Global Assessment Scale (CGAS) is a tool used to
             assess the global level of functioning and severity of mental
@@ -196,11 +199,11 @@ export default () => (
           </Paragraph>
         </Service>
       </Column>
-      <Column lg={6}>
+      <Column lg={5}>
         <Service>
-          <BodyHeadline>
+          <ServiceTitle>
             Attendance/Truancy Rates and Number of Resolved Behavioral Concerns
-          </BodyHeadline>
+          </ServiceTitle>
           <Paragraph>
             Studies show a link between students with mental health concerns,
             attendance rates, and ongoing disciplinary concerns. We anticipate
@@ -210,40 +213,44 @@ export default () => (
           </Paragraph>
         </Service>
       </Column>
-      <Column>
+      <Column lg={10}>
         <LargeHeading
-          style={{ marginBottom: -25, textAlign: 'center', color: blue }}
+          style={{
+            marginBottom: -20,
+            fontWeight: 400,
+            color: light
+          }}
         >
           Qualitative
         </LargeHeading>
       </Column>
-      <Column lg={4}>
+      <Column lg={5}>
         <Service>
-          <BodyHeadline>Self report by students</BodyHeadline>
-          <Paragraph>
-            We simply ask students if they thought counseling was helpful and
-            whether they would seek counseling again in the future.
-          </Paragraph>
-        </Service>
-      </Column>
-      <Column lg={4}>
-        <Service>
-          <BodyHeadline>Parent feedback</BodyHeadline>
+          <ServiceTitle>Parent feedback</ServiceTitle>
           <Paragraph>
             We request a parent feedback form, which gives the parent an
             opportunity to evaluate the impact of our services on their child.
           </Paragraph>
         </Service>
       </Column>
-      <Column lg={4}>
+      <Column lg={5}>
         <Service>
-          <BodyHeadline>Staff feedback</BodyHeadline>
+          <ServiceTitle>Staff feedback</ServiceTitle>
           <Paragraph>
             We invite staff to complete a feedback form for students they refer
             to Sage.
           </Paragraph>
         </Service>
       </Column>
-    </Section>
+      <Column lg={10}>
+        <Service>
+          <ServiceTitle>Self report by students</ServiceTitle>
+          <Paragraph>
+            We simply ask students if they thought counseling was helpful and
+            whether they would seek counseling again in the future.
+          </Paragraph>
+        </Service>
+      </Column>
+    </CenterSection>
   </Base>
 )

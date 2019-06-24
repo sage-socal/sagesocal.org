@@ -9,6 +9,7 @@ const Content = styled.footer`
   padding: 10px 0;
   text-align: center;
   font-size: 12px;
+  margin-bottom: 20px;
   ${media.md`
 		font-size: 16px;
 		padding: 20px 0;
