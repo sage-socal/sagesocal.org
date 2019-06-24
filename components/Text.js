@@ -16,6 +16,7 @@ export const SectionTitle = styled.h1`
 
 export const LargeHeading = styled(SectionTitle)`
   font-size: 32px;
+  line-height: 1.2;
   ${media.md`
 		font-size: 42px;
 	`};

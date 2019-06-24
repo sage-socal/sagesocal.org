@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Link from 'next/link'
-import { yellow, blue } from '../utils/colors'
+import { blue, stone } from '../utils/colors'
 import { tint } from 'polished'
 import { withRouter } from 'next/router'
 import { media } from '../utils/style-utils'
@@ -34,7 +34,7 @@ const PageLink = withRouter(styled.a`
     props.active
       ? `linear-gradient(-100deg, rgba(255, 255, 255, 0), ${tint(
           0.75,
-          yellow
+          stone
         )} 85%, rgba(255, 255, 255, 0))`
       : `none`};
   ${media.md`

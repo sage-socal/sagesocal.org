@@ -1,10 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
-import { chalk, yellow } from '../utils/colors'
-import { tint } from 'polished'
+import { chalk, stone } from '../utils/colors'
+import { darken } from 'polished'
 
 const SageGlobalStyle = createGlobalStyle`
   ::selection {
-		background: ${tint(0.5, yellow)};
+		background: ${darken(0.2, chalk)};
 	}
 
 	body {
