@@ -9,7 +9,7 @@ import Map from '../components/Map'
 import PageTitle from '../components/PageTitle'
 
 const School = styled.div``
-const CenterSection = styled(Sectsion)`
+const CenterSection = styled(Section)`
   justify-content: center;
 `
 const SchoolName = styled(BodyHeadline)`
