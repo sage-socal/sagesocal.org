@@ -4,7 +4,7 @@ import { Column } from 'hedron'
 import { FitImage } from '../components/Media'
 import { Section } from '../components/Containers'
 import { LargeHeading, Paragraph, BodyHeadline } from '../components/Text'
-import { blue, stone } from '../utils/colors'
+import { blue, stone, light } from '../utils/colors'
 import { media } from '../utils/style-utils'
 import { tint } from 'polished'
 import styled from 'styled-components'
@@ -25,7 +25,7 @@ const Person = styled(BodyHeadline)`
 `
 
 const PersonTitle = styled(BodyHeadline)`
-  color: ${tint(0.5, stone)};
+  color: ${light};
   font-size: 18px;
   text-align: center;
   ${media.md`

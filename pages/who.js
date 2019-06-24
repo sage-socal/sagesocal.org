@@ -155,26 +155,13 @@ export default () => (
       <Column md={8} mdShift={2}>
         <WhiteSectionTitle>Introducing Sage</WhiteSectionTitle>
         <WhiteParagraph>
-          Sage was founded in the San Francisco Bay Area in 2009.{' '}
-          <a href="http://cassybayarea.org">The agency</a> continues to do
-          incredible work, providing a year-round mental health safety net for
-          over 33,000 students at 43 schools in San Mateo and Santa Clara
-          County.
-        </WhiteParagraph>
-        <WhiteParagraph>
-          In the Fall of 2017, Liz Schoeben, Sage Co-Founder, decided to take
-          the Sage concept to Southern California. We have created Sage Southern
-          California, A Project of Impact Philanthropy Group.
-        </WhiteParagraph>
-        <WhiteParagraph>
-          Building on Sage's mission and core principles, Sage offers the
-          highest commitment to supporting the social and emotional needs of the
-          youth in the communities in Southern California.
-        </WhiteParagraph>
-        <WhiteParagraph>
-          Our initial partnership is with The Palos Verdes Peninsula Unified
-          School District, providing support at their 10 elementary sites and
-          two comprehensive high schools in the district.
+          Sage’s story began in 2009 when Liz Schoeben founded CASSY, a non
+          profit agency in the San Francisco Bay Area. CASSY currently partners
+          with over 60 schools in the San Francisco Bay Area to provide
+          comprehensive mental health services. In the fall of 2017, Liz
+          Schoeben decided to replicate the CASSY model to serve communities in
+          Southern California by creating Sage, a project of Impact Philanthropy
+          Group.
         </WhiteParagraph>
       </Column>
     </BlueSection>

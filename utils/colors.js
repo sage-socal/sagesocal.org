@@ -6,7 +6,7 @@ export const chalk = '#E7E5E5'
 export const stone = '#404E4D'
 
 export const dark = '#121615'
-export const light = '#B9BEBE'
+export const light = '#bfb9b9'
 
 export const white = '#FFFFFF'
 export const black = '#000000'
