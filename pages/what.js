@@ -216,6 +216,15 @@ export default () => (
             Qualitative
           </LargeHeading>
         </Column>
+        <Column lg={10}>
+          <Service>
+            <ServiceTitle>Self report by students</ServiceTitle>
+            <Paragraph>
+              We simply ask students if they thought counseling was helpful and
+              whether they would seek counseling again in the future.
+            </Paragraph>
+          </Service>
+        </Column>
         <Column lg={5}>
           <Service>
             <ServiceTitle>Parent feedback</ServiceTitle>
@@ -231,15 +240,6 @@ export default () => (
             <Paragraph>
               We invite staff to complete a feedback form for students they
               refer to Sage.
-            </Paragraph>
-          </Service>
-        </Column>
-        <Column lg={10}>
-          <Service>
-            <ServiceTitle>Self report by students</ServiceTitle>
-            <Paragraph>
-              We simply ask students if they thought counseling was helpful and
-              whether they would seek counseling again in the future.
             </Paragraph>
           </Service>
         </Column>
