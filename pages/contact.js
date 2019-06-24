@@ -94,105 +94,12 @@ export default () => (
       </Column>
       <Column md={6} lg={4}>
         <Person primary>Kathi Colli, MFT</Person>
-        <PersonTitle primary>Clinical Supervisor</PersonTitle>
+        <PersonTitle primary>Clinical Director</PersonTitle>
         <Contact primary>
           (424) 262-0896
           <br />
           collik@pvpusd.net
         </Contact>
-      </Column>
-    </Blurb>
-    <Blurb>
-      <Column md={4} lg={2}>
-        <CircleImage src="/static/images/barbara-gani.jpg" />
-      </Column>
-      <Column md={6} lg={3}>
-        <Person>Barbara Gani, LCSW</Person>
-        <PersonTitle>Student Support Specialist at Peninsula High</PersonTitle>
-        <Contact>
-          (310) 377-4888 x211
-          <br />
-          ganib@pvpusd.net
-        </Contact>
-      </Column>
-      <Column md={4} lg={2}>
-        <CircleImage src="/static/images/nanci-de-la-rosa.jpg" />
-      </Column>
-      <Column md={6} lg={3}>
-        <Person>Nancy De La Rosa, MFTi</Person>
-        <PersonTitle>
-          Student Support Specialist at Palos Verdes High School
-        </PersonTitle>
-        <Contact>
-          (310) 378-8471 x213
-          <br />
-          delarosan@pvpusd.net
-        </Contact>
-      </Column>
-    </Blurb>
-    <Blurb>
-      <Column md={4} lg={2}>
-        <CircleImage src="/static/images/kourtney.jpg" />
-      </Column>
-      <Column md={6} lg={3}>
-        <Person>Kourtney Gonzalez, MFT</Person>
-        <PersonTitle>Elementary Student Support Specialist</PersonTitle>
-        <Contact>
-          (424) 262-6289
-          <br />
-          gonzalezk@pvpusd.net
-        </Contact>
-      </Column>
-      <Column md={4} lg={2}>
-        <CircleImage src="/static/images/sarit.jpg" />
-      </Column>
-      <Column md={6} lg={3}>
-        <Person>Sarit Fassazadeh, LCSW</Person>
-        <PersonTitle>Elementary Student Support Specialist</PersonTitle>
-        <Contact>
-          (818) 724-9431
-          <br />
-          fassazadehs@pvpusd.net
-        </Contact>
-      </Column>
-    </Blurb>
-    <Blurb>
-      <Column md={4} lg={2}>
-        <CircleImage src="/static/person-placeholder.jpg" />
-      </Column>
-      <Column md={6} lg={3}>
-        <Person>Kelli Washington, APCC</Person>
-        <PersonTitle>Student Support Specialist at Peninsula High</PersonTitle>
-      </Column>
-      <Column md={4} lg={2}>
-        <CircleImage src="/static/person-placeholder.jpg" />
-      </Column>
-      <Column md={6} lg={3}>
-        <Person>Ally Sokoloff, MSW</Person>
-        <PersonTitle>
-          Student Support Specialist at Palos Verdes High School
-        </PersonTitle>
-      </Column>
-    </Blurb>
-    <Blurb>
-      <Column md={4} lg={2}>
-        <CircleImage src="/static/person-placeholder.jpg" />
-      </Column>
-      <Column md={6} lg={3}>
-        <Person>Rachael Shanbrom, AMFT</Person>
-        <PersonTitle>
-          Intermediate School Student Support Specialist
-        </PersonTitle>
-      </Column>
-      <Column md={4} lg={2}>
-        <CircleImage src="/static/person-placeholder.jpg" />
-      </Column>
-      <Column md={6} lg={3}>
-        <Person>Julia Savoni, MSW</Person>
-        <PersonTitle>
-          Intermediate School and Ranch del Mar High School Student Support
-          Specialist
-        </PersonTitle>
       </Column>
     </Blurb>
   </Base>
