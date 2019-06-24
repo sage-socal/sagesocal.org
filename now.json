@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "sagesocal.org",
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@now/next"
+    }
+  ]
+}

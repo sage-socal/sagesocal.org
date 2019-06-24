@@ -13,11 +13,15 @@ export default ({ page }) => (
         logo="/static/logo.png"
         active={page}
         pages={[
-          { path: '/who', title: 'Who We Are' },
-          { path: '/what', title: 'What We Do' },
-          { path: '/where', title: 'Where We Do It' },
-          { path: '/contact', title: 'Contact Us' },
-          { path: '/donate', title: 'Donate Now' }
+          { path: '/who', title: 'Who We Are', external: false },
+          { path: '/what', title: 'What We Do', external: false },
+          { path: '/where', title: 'Where We Do It', external: false },
+          { path: '/contact', title: 'Contact Us', external: false },
+          {
+            path: 'https://www.paypal.com/fundraiser/charity/3392177',
+            title: 'Donate Now',
+            external: true
+          }
         ]}
       />
     </Column>

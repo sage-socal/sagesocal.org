@@ -26,7 +26,7 @@ const PageLink = withRouter(styled.a`
   font-weight: 500;
   font-family: 'Rubik', sans-serif;
   font-size: 15px;
-  padding: 3px 20px;
+  padding: 4px 16px;
   margin: 0px;
   color: ${blue};
   border-bottom: none;
@@ -61,8 +61,18 @@ export default ({ logo, pages, active }) => (
     </Link>
     <NavBar>
       {pages.map(page => (
-        <Link key={page.path} href={page.path} prefetch passHref>
-          <PageLink active={page.path === '/' + active}>{page.title}</PageLink>
+        <Link
+          key={page.path}
+          href={page.path}
+          prefetch={!page.external}
+          passHref
+        >
+          <PageLink
+            target={page.external ? `_blank` : `_self`}
+            active={page.path === '/' + active}
+          >
+            {page.title}
+          </PageLink>
         </Link>
       ))}
     </NavBar>
