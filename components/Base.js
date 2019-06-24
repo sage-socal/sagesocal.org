@@ -21,7 +21,7 @@ export default class Base extends PureComponent {
   render() {
     return (
       <div>
-        <SagePage width="1200px">
+        <SagePage>
           <Header page={this.props.page} />
           {this.props.children}
         </SagePage>
