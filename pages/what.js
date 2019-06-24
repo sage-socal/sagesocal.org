@@ -16,10 +16,11 @@ import PageTitle from '../components/PageTitle'
 
 const MainImageSection = styled(Section)`
   background-size: cover;
-  background-image: url('/static/images/friends-dog.jpg');
-  height: 200px;
+  background-image: url('/static/images/main-what.jpg');
+  background-position: center center;
+  height: 320px;
   ${media.md`
-		height: 360px;
+		height: 480px;
 	`};
 `
 const FlagSubSection = styled(SubSection)`

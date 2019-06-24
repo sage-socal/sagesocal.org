@@ -3,7 +3,7 @@ import Navigation from './Navigation'
 
 export default ({ page }) => (
   <Row>
-    <Column>
+    <Column style={{ position: 'sticky', top: 0 }}>
       <Navigation
         logo="/static/logo.png"
         active={page}
