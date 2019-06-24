@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-import { orange, stone, dark, light } from '../utils/colors'
-import { tint } from 'polished'
+import { orange, dark, light } from '../utils/colors'
 import { media } from '../utils/style-utils'
 
 export const SectionTitle = styled.h1`
