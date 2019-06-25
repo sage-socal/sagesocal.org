@@ -10,9 +10,8 @@ import {
   Paragraph
 } from '../components/Text'
 import { FitImage } from '../components/Media'
-import { orange, blue, white, stone } from '../utils/colors'
+import { light, blue, white, stone } from '../utils/colors'
 import styled from 'styled-components'
-import { tint } from 'polished'
 import { media } from '../utils/style-utils'
 import PageTitle from '../components/PageTitle'
 
@@ -77,14 +76,8 @@ const PrincipleSection = styled(Section)`
   justify-content: center;
   padding: 0 20px;
 `
-const OrangeBox = styled.div`
-  height: 120px;
-  background: ${tint(0.25, orange)};
-  border-radius: 20px;
-  border: 3px ${orange} solid;
-`
 const Number = styled.h3`
-  color: ${stone};
+  color: ${light};
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   margin: 0;
