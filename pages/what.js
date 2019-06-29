@@ -19,6 +19,7 @@ const MainImageSection = styled(Section)`
   background-image: url('/static/images/friends-dog.jpg');
   background-position: top center;
   height: 380px;
+  max-height: 66vw;
   ${media.md`
 		height: 520px;
 	`};
@@ -158,16 +159,14 @@ export default () => (
     <PageSegment white style={{ paddingTop: 40, paddingBottom: 40 }}>
       <CenterSection>
         <Column lg={8}>
-          <SectionTitle
-            style={{ fontSize: 62, marginBottom: 20, textAlign: 'center' }}
-          >
+          <SectionTitle style={{ textAlign: 'center' }}>
             Measuring Success
           </SectionTitle>
-          <Paragraph style={{ textAlign: 'center', fontSize: 26 }}>
+          <SubHeadline style={{ textAlign: 'center' }}>
             Sage collaborates with school partners to measure the success of our
             services. We use a mix of the following quantitative and qualitative
             tools and metrics to measure the efficacy of our programs:
-          </Paragraph>
+          </SubHeadline>
         </Column>
       </CenterSection>
       <CenterSection style={{ zIndex: 5, marginTop: 0 }}>

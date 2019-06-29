@@ -18,14 +18,21 @@ import PageTitle from '../components/PageTitle'
 const TopSection = styled(PageSegment)`
   position: relative;
   margin: 20px auto;
-  margin-bottom: -260px;
+  margin-bottom: -120px;
+  ${media.md`
+    margin-bottom: -260px;
+  `}
 `
 const FlagSubSection = styled(SubSection)`
   background-color: ${stone};
   position: relative;
-  top: -220px;
+  top: -80px;
+  ${media.md`
+    top: -220px;
+  `}
 `
 const MainImageSection = styled(Section)`
+  max-height: 66vw;
   height: 680px;
   background-size: cover;
   background-position: center left;
@@ -185,7 +192,7 @@ export default () => (
     <PageSegment white style={{ paddingTop: 40, paddingBottom: 40 }}>
       <Section style={{ justifyContent: 'center', paddingBottom: 0 }}>
         <Column md={8}>
-          <SectionTitle style={{ fontSize: 62, textAlign: 'center' }}>
+          <SectionTitle style={{ textAlign: 'center' }}>
             Our Guiding Principles
           </SectionTitle>
           <SubHeadline style={{ textAlign: 'center' }}>

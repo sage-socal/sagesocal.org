@@ -3,7 +3,12 @@ import Base from '../components/Base'
 import { Column } from 'hedron'
 import { FitImage } from '../components/Media'
 import { Section, PageSegment } from '../components/Containers'
-import { LargeHeading, Paragraph, BodyHeadline } from '../components/Text'
+import {
+  SectionTitle,
+  LargeHeading,
+  Paragraph,
+  BodyHeadline
+} from '../components/Text'
 import { blue, light } from '../utils/colors'
 import { media } from '../utils/style-utils'
 import styled from 'styled-components'
@@ -11,6 +16,12 @@ import PageTitle from '../components/PageTitle'
 
 const Blurb = styled(Section)`
   justify-content: center;
+`
+
+const BigParagraph = styled(Paragraph)`
+  ${media.md`
+    font-size: 26px;
+	`};
 `
 
 const Person = styled(BodyHeadline)`
@@ -69,13 +80,13 @@ export default () => (
       <Blurb>
         <Column lg={8}>
           <Paragraph />
-          <LargeHeading style={{ fontSize: 62 }}>Contact us</LargeHeading>
-          <Paragraph style={{ fontSize: 26 }}>
+          <SectionTitle>Contact us</SectionTitle>
+          <BigParagraph>
             If you are school personnel or a parent and want to know more about
             Sage services, are interested in either employment or volunteer
             opportunities, or want more information about how to best support
             Sage's work, please call or email us.
-          </Paragraph>
+          </BigParagraph>
         </Column>
       </Blurb>
       <Blurb>
