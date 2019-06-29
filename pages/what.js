@@ -16,8 +16,8 @@ import PageTitle from '../components/PageTitle'
 
 const MainImageSection = styled(Section)`
   background-size: cover;
-  background-image: url('/static/images/teens-bonding.jpg');
-  background-position: center center;
+  background-image: url('/static/images/friends-dog.jpg');
+  background-position: top center;
   height: 380px;
   ${media.md`
 		height: 520px;
@@ -101,28 +101,10 @@ export default () => (
         </Column>
       </CenterSection>
       <CenterSection>
-        <Column lg={5}>
-          <SectionTitle>For staff…</SectionTitle>
-          <Service>
-            <ServiceTitle>Staff Consultation</ServiceTitle>
-            <Paragraph>
-              Sage becomes an integral part of each school’s team. School staff
-              can freely consult with the on-campus therapists regarding
-              disconcerting situations that they see in their classrooms, in the
-              halls or anywhere.
-            </Paragraph>
-          </Service>
-          <Service>
-            <ServiceTitle>Staff Training</ServiceTitle>
-            <Paragraph>
-              We provide staff training on mental health issues such as Child
-              Protective Services (CPS) reporting requirements, classroom
-              management of grief and loss, and how to identify red flags.
-            </Paragraph>
-          </Service>
-        </Column>
-        <Column lg={5}>
+        <Column style={{ paddingBottom: 0 }} lg={10}>
           <SectionTitle>For parents…</SectionTitle>
+        </Column>
+        <Column style={{ paddingTop: 0 }} lg={5}>
           <Service>
             <ServiceTitle>Parent Consultation</ServiceTitle>
             <Paragraph>
@@ -132,6 +114,8 @@ export default () => (
               risky behaviors, and secure additional support when needed.
             </Paragraph>
           </Service>
+        </Column>
+        <Column style={{ paddingTop: 0 }} lg={5}>
           <Service>
             <ServiceTitle>Community Outreach</ServiceTitle>
             <Paragraph>
@@ -140,6 +124,32 @@ export default () => (
               healthy adolescents. These presentations include our proven Latino
               Outreach program where the sessions are conducted in Spanish and
               address specific cultural needs of Latino Community.
+            </Paragraph>
+          </Service>
+        </Column>
+      </CenterSection>
+      <CenterSection>
+        <Column style={{ paddingBottom: 0 }} lg={10}>
+          <SectionTitle>For staff…</SectionTitle>
+        </Column>
+        <Column style={{ paddingTop: 0 }} lg={5}>
+          <Service>
+            <ServiceTitle>Staff Consultation</ServiceTitle>
+            <Paragraph>
+              Sage becomes an integral part of each school’s team. School staff
+              can freely consult with the on-campus therapists regarding
+              disconcerting situations that they see in their classrooms, in the
+              halls or anywhere.
+            </Paragraph>
+          </Service>
+        </Column>
+        <Column style={{ paddingTop: 0 }} lg={5}>
+          <Service>
+            <ServiceTitle>Staff Training</ServiceTitle>
+            <Paragraph>
+              We provide staff training on mental health issues such as Child
+              Protective Services (CPS) reporting requirements, classroom
+              management of grief and loss, and how to identify red flags.
             </Paragraph>
           </Service>
         </Column>
@@ -174,7 +184,7 @@ export default () => (
         </Column>
         <Column lg={5}>
           <Service>
-            <ServiceTitle>Childrens Gloabal Assesment Scale</ServiceTitle>
+            <ServiceTitle>Children's Global Assesment Scale</ServiceTitle>
             <Paragraph>
               The Children’s Global Assessment Scale (CGAS) is a tool used to
               assess the global level of functioning and severity of mental
@@ -216,15 +226,6 @@ export default () => (
             Qualitative
           </LargeHeading>
         </Column>
-        <Column lg={10}>
-          <Service>
-            <ServiceTitle>Self report by students</ServiceTitle>
-            <Paragraph>
-              We simply ask students if they thought counseling was helpful and
-              whether they would seek counseling again in the future.
-            </Paragraph>
-          </Service>
-        </Column>
         <Column lg={5}>
           <Service>
             <ServiceTitle>Parent feedback</ServiceTitle>
@@ -243,6 +244,16 @@ export default () => (
             </Paragraph>
           </Service>
         </Column>
+        <Column lg={5}>
+          <Service>
+            <ServiceTitle>Self report by students</ServiceTitle>
+            <Paragraph>
+              We simply ask students if they thought counseling was helpful and
+              whether they would seek counseling again in the future.
+            </Paragraph>
+          </Service>
+        </Column>
+        <Column lg={5} />
       </CenterSection>
     </PageSegment>
   </Base>
