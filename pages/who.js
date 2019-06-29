@@ -10,27 +10,33 @@ import {
   Paragraph
 } from '../components/Text'
 import { FitImage } from '../components/Media'
-import { orange, blue, white, stone } from '../utils/colors'
+import { light, blue, white, stone } from '../utils/colors'
 import styled from 'styled-components'
-import { tint } from 'polished'
 import { media } from '../utils/style-utils'
 import PageTitle from '../components/PageTitle'
 
 const TopSection = styled(PageSegment)`
   position: relative;
   margin: 20px auto;
-  margin-bottom: -300px;
+  margin-bottom: -120px;
+  ${media.md`
+    margin-bottom: -260px;
+  `}
 `
 const FlagSubSection = styled(SubSection)`
   background-color: ${stone};
   position: relative;
-  top: -260px;
+  top: -80px;
+  ${media.md`
+    top: -220px;
+  `}
 `
 const MainImageSection = styled(Section)`
+  max-height: 66vw;
   height: 680px;
   background-size: cover;
   background-position: center left;
-  background-image: url('/static/images/kids-jumping.jpg');
+  background-image: url('/static/images/teenagers.jpg');
 `
 const WhiteLargeHeading = styled(LargeHeading)`
   color: ${white};
@@ -77,14 +83,8 @@ const PrincipleSection = styled(Section)`
   justify-content: center;
   padding: 0 20px;
 `
-const OrangeBox = styled.div`
-  height: 120px;
-  background: ${tint(0.25, orange)};
-  border-radius: 20px;
-  border: 3px ${orange} solid;
-`
 const Number = styled.h3`
-  color: ${stone};
+  color: ${light};
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   margin: 0;
@@ -110,9 +110,7 @@ export default () => (
           <WhiteParagraph>
             Our mission is to de-stigmatize mental health services and make
             supporting students’ social and emotional well-being the norm in our
-            local schools. We want to provide all students with the continuity
-            of support they need, from the first day of kindergarten until they
-            graduate from high school, to be successful in school and in life.
+            local schools.
           </WhiteParagraph>
         </FlagSubSection>
       </Column>
@@ -194,7 +192,7 @@ export default () => (
     <PageSegment white style={{ paddingTop: 40, paddingBottom: 40 }}>
       <Section style={{ justifyContent: 'center', paddingBottom: 0 }}>
         <Column md={8}>
-          <SectionTitle style={{ fontSize: 62, textAlign: 'center' }}>
+          <SectionTitle style={{ textAlign: 'center' }}>
             Our Guiding Principles
           </SectionTitle>
           <SubHeadline style={{ textAlign: 'center' }}>
