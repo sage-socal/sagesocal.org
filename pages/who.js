@@ -18,18 +18,18 @@ import PageTitle from '../components/PageTitle'
 const TopSection = styled(PageSegment)`
   position: relative;
   margin: 20px auto;
-  margin-bottom: -300px;
+  margin-bottom: -260px;
 `
 const FlagSubSection = styled(SubSection)`
   background-color: ${stone};
   position: relative;
-  top: -260px;
+  top: -220px;
 `
 const MainImageSection = styled(Section)`
   height: 680px;
   background-size: cover;
   background-position: center left;
-  background-image: url('/static/images/kids-jumping.jpg');
+  background-image: url('/static/images/teenagers.jpg');
 `
 const WhiteLargeHeading = styled(LargeHeading)`
   color: ${white};
@@ -103,9 +103,7 @@ export default () => (
           <WhiteParagraph>
             Our mission is to de-stigmatize mental health services and make
             supporting students’ social and emotional well-being the norm in our
-            local schools. We want to provide all students with the continuity
-            of support they need, from the first day of kindergarten until they
-            graduate from high school, to be successful in school and in life.
+            local schools.
           </WhiteParagraph>
         </FlagSubSection>
       </Column>
