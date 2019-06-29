@@ -69,7 +69,7 @@ export default () => (
       <Blurb>
         <Column lg={8}>
           <Paragraph />
-          <LargeHeading style={{ fontSize: 62 }}>Contact us.</LargeHeading>
+          <LargeHeading style={{ fontSize: 62 }}>Contact us</LargeHeading>
           <Paragraph style={{ fontSize: 26 }}>
             If you are school personnel or a parent and want to know more about
             Sage services, are interested in either employment or volunteer
