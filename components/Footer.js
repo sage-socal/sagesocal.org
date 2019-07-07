@@ -20,8 +20,8 @@ export default () => (
   <Row>
     <Column>
       <Content>
-        Copyright &copy; {new Date().getFullYear()} Sage, A Project of Impact
-        Philanthropy Group.
+        Copyright &copy; {new Date().getFullYear()} Sage, a project of Impact
+        Philanthropy Group (EIN: 82-4614872)
       </Content>
     </Column>
   </Row>
