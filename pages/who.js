@@ -180,7 +180,7 @@ export default () => (
           <WhiteParagraph>
             Sage’s story began in 2009 when Liz Schoeben founded CASSY, a non
             profit agency in the San Francisco Bay Area. CASSY currently
-            partners with over 60 schools in the San Francisco Bay Area to
+            partners with over 70 schools in the San Francisco Bay Area to
             provide comprehensive mental health services. In the fall of 2017,
             Liz Schoeben decided to replicate the CASSY model to serve
             communities in Southern California by creating Sage, a project of
