@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "alias": [
+    "www.sagesocal.org",
+    "www.sagesocal.com",
+    "sagesocal.com",
+    "cassysocal.org"
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "status": 301,
+      "headers": {
+        "Location": "https://sagesocal.org/$1"
+      }
+    }
+  ]
+}
