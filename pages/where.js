@@ -55,7 +55,7 @@ export default () => (
       <CenterSection>
         <Column>
           <LargeHeading style={{ textAlign: 'center' }}>
-            The Palos Verdes Peninsula Unified School District
+            Palos Verdes Peninsula Unified School District
           </LargeHeading>
         </Column>
         <Column md={6} lg={4}>
@@ -63,7 +63,7 @@ export default () => (
         </Column>
         <Column md={6} lg={8}>
           <Paragraph>
-            <b>The Palos Verdes Peninsula Unified School District</b> serves the
+            <b>Palos Verdes Peninsula Unified School District</b> serves the
             four Peninsula cities  and the unincorporated areas of the Palos
             Verdes Peninsula.  Student enrollment is approximately 11,400
             students. The school district's reputation for having a high quality
@@ -85,7 +85,7 @@ export default () => (
       <CenterSection>
         <Column>
           <LargeHeading style={{ textAlign: 'center' }}>
-            The Torrance Unified School District
+            Torrance Unified School District
           </LargeHeading>
         </Column>
         <Column md={6} lg={4} style={{ textAlign: 'center' }}>
@@ -93,9 +93,9 @@ export default () => (
         </Column>
         <Column md={6} lg={8}>
           <Paragraph>
-            <b>The Torrance Unified School District</b> was established in 1947
-            and unified in 1948. Torrance Unified School District is nestled in
-            the heart of the South Bay, in the south-western part of Los Angeles
+            <b>Torrance Unified School District</b> was established in 1947 and
+            unified in 1948. Torrance Unified School District is nestled in the
+            heart of the South Bay, in the south-western part of Los Angeles
             County. TUSD is bordered by the Palos Verdes Peninsula on the south,
             the beach cities - Redondo, Hermosa, and Manhattan Beach - to the
             west, and cities of Lawndale and Hawthorne to the north. The
