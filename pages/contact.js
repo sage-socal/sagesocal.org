@@ -3,16 +3,21 @@ import Base from '../components/Base'
 import { Column } from 'hedron'
 import { FitImage } from '../components/Media'
 import { Section, PageSegment } from '../components/Containers'
-import {
-  SectionTitle,
-  LargeHeading,
-  Paragraph,
-  BodyHeadline
-} from '../components/Text'
+import { SectionTitle, Paragraph, BodyHeadline } from '../components/Text'
 import { blue, light } from '../utils/colors'
 import { media } from '../utils/style-utils'
 import styled from 'styled-components'
 import PageTitle from '../components/PageTitle'
+
+const SocialIcon = styled(FitImage)`
+  width: 80px;
+  height: 80px;
+  margin-right: 60px;
+
+  &:hover {
+    opacity: 0.75;
+  }
+`
 
 const Blurb = styled(Section)`
   justify-content: center;
@@ -79,7 +84,6 @@ export default () => (
     >
       <Blurb>
         <Column lg={8}>
-          <Paragraph />
           <SectionTitle>Contact us</SectionTitle>
           <BigParagraph>
             If you are school personnel or a parent and want to know more about
@@ -115,6 +119,28 @@ export default () => (
             <br />
             (424) 262-0896
           </Contact>
+        </Column>
+      </Blurb>
+      <Blurb>
+        <Column lg={8}>
+          <SectionTitle>Follow us</SectionTitle>
+          <BigParagraph>
+            Follow us on your favorite social media platform to show your
+            support for students’ social and emotional well being.
+          </BigParagraph>
+        </Column>
+      </Blurb>
+      <Blurb style={{ paddingTop: 0, marginTop: -20 }}>
+        <Column lg={8}>
+          <a href="https://www.instagram.com/sagesocal/" target="_blank">
+            <SocialIcon src="/static/icons/instagram.png" />
+          </a>
+          <a
+            href="https://www.facebook.com/Sage-1036573163214804/"
+            target="_blank"
+          >
+            <SocialIcon src="/static/icons/facebook.png" />
+          </a>
         </Column>
       </Blurb>
     </PageSegment>
