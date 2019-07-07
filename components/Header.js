@@ -13,7 +13,8 @@ export default ({ page }) => (
           { path: '/where', title: 'Where We Do It', external: false },
           { path: '/contact', title: 'Contact Us', external: false },
           {
-            path: 'https://www.paypal.com/fundraiser/charity/3392177',
+            path:
+              'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DCQX2KKN3N2KY&source=url',
             title: 'Donate Now',
             external: true
           }
