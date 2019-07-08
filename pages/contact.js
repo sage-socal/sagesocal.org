@@ -135,10 +135,7 @@ export default () => (
           <a href="https://www.instagram.com/sagesocal/" target="_blank">
             <SocialIcon src="/static/icons/instagram.png" />
           </a>
-          <a
-            href="https://www.facebook.com/Sage-1036573163214804/"
-            target="_blank"
-          >
+          <a href="https://www.facebook.com/sagesocal/" target="_blank">
             <SocialIcon src="/static/icons/facebook.png" />
           </a>
         </Column>
