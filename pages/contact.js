@@ -138,6 +138,9 @@ export default () => (
           <a href="https://www.facebook.com/sagesocal/" target="_blank">
             <SocialIcon src="/static/icons/facebook.png" />
           </a>
+          <a href="https://www.twitter.com/sagesocal/" target="_blank">
+            <SocialIcon src="/static/icons/twitter.png" />
+          </a>
         </Column>
       </Blurb>
     </PageSegment>
