@@ -115,7 +115,7 @@ export default () => (
           <Person primary>Kathi Colli, MFT</Person>
           <PersonTitle primary>Clinical Director</PersonTitle>
           <Contact primary>
-            collik@pvpusd.net
+            kathicolli@sagesocal.org
             <br />
             (424) 262-0896
           </Contact>
