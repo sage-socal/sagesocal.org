@@ -1,7 +1,7 @@
 import { Row, Column } from 'hedron'
 import Navigation from './Navigation'
 
-export default ({ page }) => (
+const Header = ({ page }) => (
   <Row>
     <Column style={{ position: 'sticky', top: 0 }}>
       <Navigation
@@ -13,13 +13,14 @@ export default ({ page }) => (
           { path: '/where', title: 'Where We Do It', external: false },
           { path: '/contact', title: 'Contact Us', external: false },
           {
-            path:
-              'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DCQX2KKN3N2KY&source=url',
+            path: 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DCQX2KKN3N2KY&source=url',
             title: 'Donate Now',
-            external: true
-          }
+            external: true,
+          },
         ]}
       />
     </Column>
   </Row>
 )
+
+export default Header

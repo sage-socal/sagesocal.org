@@ -2,27 +2,77 @@ import React from 'react'
 import Base from '../components/Base'
 import { Column } from 'hedron'
 import { FitImage } from '../components/Media'
-import { BodyHeadline, LargeHeading, Paragraph } from '../components/Text'
+import { LargeHeading, Paragraph } from '../components/Text'
 import { Section, PageSegment } from '../components/Containers'
 import styled from 'styled-components'
-import { blue } from '../utils/colors'
-import Map from '../components/Map'
 import PageTitle from '../components/PageTitle'
 
 const CenterSection = styled(Section)`
   justify-content: center;
 `
 
-export default () => (
+const Where = () => (
   <Base page="where">
     <PageTitle name="Where We Do It" />
-    <PageSegment width="1280" style={{ margin: 'auto', marginTop: 20 }}>
-      <Map />
-    </PageSegment>
     <PageSegment
       white
       style={{ marginTop: 0, paddingTop: 40, paddingBottom: 40 }}
     >
+      <CenterSection>
+        <Column>
+          <LargeHeading style={{ textAlign: 'center' }}>
+            South Pasadena Unified School District
+          </LargeHeading>
+        </Column>
+        <Column md={6} lg={4} style={{ textAlign: 'center' }}>
+          <FitImage
+            style={{ maxWidth: 300 }}
+            src="/static/images/south-pasadena.jpg"
+          />
+        </Column>
+        <Column md={6} lg={8}>
+          <Paragraph>
+            Established in 1886, the{' '}
+            <b>South Pasadena Unified School District</b> serves approximately
+            4,800 students within five schools including three elementary
+            schools, one middle school and one comprehensive high school. 
+            Nestled in the West San Gabriel Valley, SPUSD has earned a
+            reputation for providing high quality public education, attracting
+            families who value challenging academic programs and outstanding
+            teachers. Consistently recognized for superior performance, SPUSD
+            students earn honors at the local, state and national level.  The
+            District draws vital support from parents and community members
+            through the South Pasadena Educational Foundation, local PTAs and
+            booster clubs. 
+          </Paragraph>
+        </Column>
+      </CenterSection>
+      <CenterSection>
+        <Column>
+          <LargeHeading style={{ textAlign: 'center' }}>
+            Pasadena Unified School District
+          </LargeHeading>
+        </Column>
+        <Column md={6} lg={4} style={{ textAlign: 'center' }}>
+          <FitImage
+            style={{ maxWidth: 300 }}
+            src="/static/images/pasadena.jpg"
+          />
+        </Column>
+        <Column md={6} lg={8}>
+          <Paragraph>
+            The schools of the <b>Pasadena Unified School District</b> (PUSD)
+            enroll more than 17,000 students in Transitional Kindergarten-12th
+            grade in a 76-square mile area that includes Altadena, Pasadena,
+            Sierra Madre and unincorporated areas of Los Angeles County. The
+            schools offer a wide variety of educational options designed to
+            prepare today's students to be critical thinkers, creative
+            problem-solvers, and strong communicators - the leaders of tomorrow.
+            Vibrant academics, exceptional teachers, and supportive school
+            communities that nurture the whole child are the hallmarks of PUSD.
+          </Paragraph>
+        </Column>
+      </CenterSection>
       <CenterSection>
         <Column>
           <LargeHeading style={{ textAlign: 'center' }}>
@@ -113,3 +163,5 @@ export default () => (
     </PageSegment>
   </Base>
 )
+
+export default Where

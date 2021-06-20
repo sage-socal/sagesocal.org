@@ -7,7 +7,7 @@ import {
   LargeHeading,
   SubHeadline,
   BodyHeadline,
-  Paragraph
+  Paragraph,
 } from '../components/Text'
 import { blue, light } from '../utils/colors'
 import styled from 'styled-components'
@@ -34,7 +34,7 @@ const Service = styled.div`
   margin: 20px 0;
 `
 
-export default () => (
+const What = () => (
   <Base page="what">
     <PageTitle name="What We Do" />
     <PageSegment width="1280" style={{ margin: 'auto', marginTop: 20 }}>
@@ -175,7 +175,7 @@ export default () => (
             style={{
               marginBottom: -20,
               fontWeight: 400,
-              color: light
+              color: light,
             }}
           >
             Quantitative
@@ -219,7 +219,7 @@ export default () => (
             style={{
               marginBottom: -20,
               fontWeight: 400,
-              color: light
+              color: light,
             }}
           >
             Qualitative
@@ -257,3 +257,5 @@ export default () => (
     </PageSegment>
   </Base>
 )
+
+export default What

@@ -16,7 +16,7 @@ const Content = styled.footer`
 	`};
 `
 
-export default () => (
+const Footer = () => (
   <Row>
     <Column>
       <Content>
@@ -26,3 +26,5 @@ export default () => (
     </Column>
   </Row>
 )
+
+export default Footer

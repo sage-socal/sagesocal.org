@@ -35,7 +35,7 @@ const Person = styled(BodyHeadline)`
   text-align: center;
   ${media.md`
 		text-align: left;
-		font-size: ${props => (props.primary ? `32px` : `26px`)};
+		font-size: ${(props) => (props.primary ? `32px` : `26px`)};
 	`};
 `
 
@@ -46,7 +46,7 @@ const PersonTitle = styled(BodyHeadline)`
   font-weight: 400;
   ${media.md`
 		text-align: left;
-		font-size: ${props => (props.primary ? `26px` : `18px`)};
+		font-size: ${(props) => (props.primary ? `26px` : `18px`)};
 	`};
 `
 
@@ -56,7 +56,7 @@ const Contact = styled(Paragraph)`
   text-align: center;
   ${media.md`
 		text-align: left;
-		font-size: ${props => (props.primary ? `20px` : `18px`)};
+		font-size: ${(props) => (props.primary ? `20px` : `18px`)};
 	`};
 `
 
@@ -75,7 +75,7 @@ const CircleImage = styled(FitImage)`
 	`};
 `
 
-export default () => (
+const ContactComponent = () => (
   <Base page="contact">
     <PageTitle name="Contact Us" />
     <PageSegment
@@ -146,3 +146,5 @@ export default () => (
     </PageSegment>
   </Base>
 )
+
+export default ContactComponent

@@ -8,7 +8,7 @@ const initGA = () => {
   ReactGA.initialize('UA-109703609-1')
 }
 
-const logPageView = page => {
+const logPageView = (page) => {
   ReactGA.set({ page })
   ReactGA.pageview(page)
 }

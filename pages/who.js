@@ -7,7 +7,7 @@ import {
   LargeHeading,
   SubHeadline,
   BodyHeadline,
-  Paragraph
+  Paragraph,
 } from '../components/Text'
 import { FitImage } from '../components/Media'
 import { light, blue, white, stone } from '../utils/colors'
@@ -99,7 +99,7 @@ const Number = styled.h3`
 	`};
 `
 
-export default () => (
+const Who = () => (
   <Base page="who">
     <PageTitle name="Who We Are" />
     <TopSection width="1280">
@@ -293,3 +293,5 @@ export default () => (
     </PageSegment>
   </Base>
 )
+
+export default Who
