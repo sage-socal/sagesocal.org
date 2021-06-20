@@ -15,9 +15,6 @@ const CenterSection = styled(Section)`
 
 const Where = () => <Base page="where">
   <PageTitle name="Where We Do It" />
-  <PageSegment width="1280" style={{ margin: 'auto', marginTop: 20 }}>
-    <Map />
-  </PageSegment>
   <PageSegment
     white
     style={{ marginTop: 0, paddingTop: 40, paddingBottom: 40 }}
