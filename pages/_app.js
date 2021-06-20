@@ -1,5 +1,5 @@
 import React from 'react'
-import App, { Container } from 'next/app'
+import App from 'next/app'
 import SageGlobalStyle from '../components/GlobalStyle'
 import { Normalize } from 'styled-normalize'
 import Favicon from '../components/Favicon'
@@ -19,12 +19,12 @@ export default class MyApp extends App {
     const { Component, pageProps } = this.props
 
     return (
-      <Container>
+      <>
         <Favicon />
         <Normalize />
         <SageGlobalStyle />
         <Component {...pageProps} />
-      </Container>
+      </>
     )
   }
 }
