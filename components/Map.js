@@ -135,10 +135,10 @@ const Map = compose(
   </GoogleMap>
 ))
 
-export default () => (
-  <div
-    style={{ backgroundColor: `#9BD1FF`, height: `520px`, maxHeight: `66vw` }}
-  >
-    <Map />
-  </div>
-)
+const MapComponent = () => <div
+  style={{ backgroundColor: `#9BD1FF`, height: `520px`, maxHeight: `66vw` }}
+>
+  <Map />
+</div>;
+
+export default MapComponent;

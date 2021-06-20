@@ -52,29 +52,29 @@ const Logo = ({ url }) => (
   />
 )
 
-export default ({ logo, pages, active }) => (
-  <Header>
-    <Link href="/who" prefetch>
-      <a>
-        <Logo url={logo} />
-      </a>
-    </Link>
-    <NavBar>
-      {pages.map(page => (
-        <Link
-          key={page.path}
-          href={page.path}
-          prefetch={!page.external}
-          passHref
+const Navigation = ({ logo, pages, active }) => <Header>
+  <Link href="/who" prefetch>
+    <a>
+      <Logo url={logo} />
+    </a>
+  </Link>
+  <NavBar>
+    {pages.map(page => (
+      <Link
+        key={page.path}
+        href={page.path}
+        prefetch={!page.external}
+        passHref
+      >
+        <PageLink
+          target={page.external ? `_blank` : `_self`}
+          active={page.path === '/' + active}
         >
-          <PageLink
-            target={page.external ? `_blank` : `_self`}
-            active={page.path === '/' + active}
-          >
-            {page.title}
-          </PageLink>
-        </Link>
-      ))}
-    </NavBar>
-  </Header>
-)
+          {page.title}
+        </PageLink>
+      </Link>
+    ))}
+  </NavBar>
+</Header>;
+
+export default Navigation;
