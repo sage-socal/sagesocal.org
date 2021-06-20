@@ -35,7 +35,7 @@ const Person = styled(BodyHeadline)`
   text-align: center;
   ${media.md`
 		text-align: left;
-		font-size: ${props => (props.primary ? `32px` : `26px`)};
+		font-size: ${(props) => (props.primary ? `32px` : `26px`)};
 	`};
 `
 
@@ -46,7 +46,7 @@ const PersonTitle = styled(BodyHeadline)`
   font-weight: 400;
   ${media.md`
 		text-align: left;
-		font-size: ${props => (props.primary ? `26px` : `18px`)};
+		font-size: ${(props) => (props.primary ? `26px` : `18px`)};
 	`};
 `
 
@@ -56,7 +56,7 @@ const Contact = styled(Paragraph)`
   text-align: center;
   ${media.md`
 		text-align: left;
-		font-size: ${props => (props.primary ? `20px` : `18px`)};
+		font-size: ${(props) => (props.primary ? `20px` : `18px`)};
 	`};
 `
 
@@ -75,74 +75,76 @@ const CircleImage = styled(FitImage)`
 	`};
 `
 
-const ContactComponent = () => <Base page="contact">
-  <PageTitle name="Contact Us" />
-  <PageSegment
-    white
-    style={{ marginTop: 20, paddingTop: 40, paddingBottom: 40 }}
-  >
-    <Blurb>
-      <Column lg={8}>
-        <SectionTitle>Contact us</SectionTitle>
-        <BigParagraph>
-          If you are school personnel or a parent and want to know more about
-          Sage services, are interested in either employment or volunteer
-          opportunities, or want more information about how to best support
-          Sage's work, please call or email us.
-        </BigParagraph>
-      </Column>
-    </Blurb>
-    <Blurb>
-      <Column md={4} lg={2}>
-        <CircleImage src="/static/images/liz-schoeben.jpg" />
-      </Column>
-      <Column md={6} lg={6}>
-        <Person primary>Liz Schoeben, MFT</Person>
-        <PersonTitle primary>Executive Director</PersonTitle>
-        <Contact primary>
-          lizschoeben@sagesocal.org
-          <br />
-          (650) 799-5266
-        </Contact>
-      </Column>
-    </Blurb>
-    <Blurb>
-      <Column md={4} lg={2}>
-        <CircleImage src="/static/images/kathi-colli.jpg" />
-      </Column>
-      <Column md={6} lg={6}>
-        <Person primary>Kathi Colli, MFT</Person>
-        <PersonTitle primary>Clinical Director</PersonTitle>
-        <Contact primary>
-          kathicolli@sagesocal.org
-          <br />
-          (424) 262-0896
-        </Contact>
-      </Column>
-    </Blurb>
-    <Blurb>
-      <Column lg={8}>
-        <SectionTitle>Follow us</SectionTitle>
-        <BigParagraph>
-          Follow us on your favorite social media platform to show your
-          support for students’ social and emotional well being.
-        </BigParagraph>
-      </Column>
-    </Blurb>
-    <Blurb style={{ paddingTop: 0, marginTop: -20 }}>
-      <Column lg={8}>
-        <a href="https://www.instagram.com/sagesocal/" target="_blank">
-          <SocialIcon src="/static/icons/instagram.png" />
-        </a>
-        <a href="https://www.twitter.com/sagesocal/" target="_blank">
-          <SocialIcon src="/static/icons/twitter.png" />
-        </a>
-        <a href="https://www.facebook.com/sagesocal/" target="_blank">
-          <SocialIcon src="/static/icons/facebook.png" />
-        </a>
-      </Column>
-    </Blurb>
-  </PageSegment>
-</Base>;
+const ContactComponent = () => (
+  <Base page="contact">
+    <PageTitle name="Contact Us" />
+    <PageSegment
+      white
+      style={{ marginTop: 20, paddingTop: 40, paddingBottom: 40 }}
+    >
+      <Blurb>
+        <Column lg={8}>
+          <SectionTitle>Contact us</SectionTitle>
+          <BigParagraph>
+            If you are school personnel or a parent and want to know more about
+            Sage services, are interested in either employment or volunteer
+            opportunities, or want more information about how to best support
+            Sage's work, please call or email us.
+          </BigParagraph>
+        </Column>
+      </Blurb>
+      <Blurb>
+        <Column md={4} lg={2}>
+          <CircleImage src="/static/images/liz-schoeben.jpg" />
+        </Column>
+        <Column md={6} lg={6}>
+          <Person primary>Liz Schoeben, MFT</Person>
+          <PersonTitle primary>Executive Director</PersonTitle>
+          <Contact primary>
+            lizschoeben@sagesocal.org
+            <br />
+            (650) 799-5266
+          </Contact>
+        </Column>
+      </Blurb>
+      <Blurb>
+        <Column md={4} lg={2}>
+          <CircleImage src="/static/images/kathi-colli.jpg" />
+        </Column>
+        <Column md={6} lg={6}>
+          <Person primary>Kathi Colli, MFT</Person>
+          <PersonTitle primary>Clinical Director</PersonTitle>
+          <Contact primary>
+            kathicolli@sagesocal.org
+            <br />
+            (424) 262-0896
+          </Contact>
+        </Column>
+      </Blurb>
+      <Blurb>
+        <Column lg={8}>
+          <SectionTitle>Follow us</SectionTitle>
+          <BigParagraph>
+            Follow us on your favorite social media platform to show your
+            support for students’ social and emotional well being.
+          </BigParagraph>
+        </Column>
+      </Blurb>
+      <Blurb style={{ paddingTop: 0, marginTop: -20 }}>
+        <Column lg={8}>
+          <a href="https://www.instagram.com/sagesocal/" target="_blank">
+            <SocialIcon src="/static/icons/instagram.png" />
+          </a>
+          <a href="https://www.twitter.com/sagesocal/" target="_blank">
+            <SocialIcon src="/static/icons/twitter.png" />
+          </a>
+          <a href="https://www.facebook.com/sagesocal/" target="_blank">
+            <SocialIcon src="/static/icons/facebook.png" />
+          </a>
+        </Column>
+      </Blurb>
+    </PageSegment>
+  </Base>
+)
 
-export default ContactComponent;
+export default ContactComponent

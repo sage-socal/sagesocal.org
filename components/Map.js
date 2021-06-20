@@ -3,7 +3,7 @@ import {
   withScriptjs,
   withGoogleMap,
   GoogleMap,
-  Marker
+  Marker,
 } from 'react-google-maps'
 
 const Map = compose(
@@ -12,7 +12,7 @@ const Map = compose(
       'https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAw9mDpLUaCKjOEEtEhJh6HyZmaw_eFZGg',
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `100%` }} />,
-    mapElement: <div style={{ height: `100%` }} />
+    mapElement: <div style={{ height: `100%` }} />,
   }),
   withScriptjs,
   withGoogleMap
@@ -24,102 +24,102 @@ const Map = compose(
           featureType: 'administrative.land_parcel',
           stylers: [
             {
-              visibility: 'off'
-            }
-          ]
+              visibility: 'off',
+            },
+          ],
         },
         {
           featureType: 'administrative.neighborhood',
           stylers: [
             {
-              visibility: 'off'
-            }
-          ]
+              visibility: 'off',
+            },
+          ],
         },
         {
           featureType: 'poi',
           elementType: 'labels.text',
           stylers: [
             {
-              visibility: 'off'
-            }
-          ]
+              visibility: 'off',
+            },
+          ],
         },
         {
           featureType: 'poi.business',
           stylers: [
             {
-              visibility: 'off'
-            }
-          ]
+              visibility: 'off',
+            },
+          ],
         },
         {
           featureType: 'road',
           elementType: 'labels',
           stylers: [
             {
-              visibility: 'off'
-            }
-          ]
+              visibility: 'off',
+            },
+          ],
         },
         {
           featureType: 'road',
           elementType: 'labels.icon',
           stylers: [
             {
-              visibility: 'off'
-            }
-          ]
+              visibility: 'off',
+            },
+          ],
         },
         {
           featureType: 'road.arterial',
           stylers: [
             {
-              visibility: 'off'
-            }
-          ]
+              visibility: 'off',
+            },
+          ],
         },
         {
           featureType: 'road.highway',
           elementType: 'labels',
           stylers: [
             {
-              visibility: 'off'
-            }
-          ]
+              visibility: 'off',
+            },
+          ],
         },
         {
           featureType: 'road.local',
           stylers: [
             {
-              visibility: 'off'
-            }
-          ]
+              visibility: 'off',
+            },
+          ],
         },
         {
           featureType: 'transit',
           stylers: [
             {
-              visibility: 'off'
-            }
-          ]
+              visibility: 'off',
+            },
+          ],
         },
         {
           featureType: 'water',
           elementType: 'labels.text',
           stylers: [
             {
-              visibility: 'off'
-            }
-          ]
-        }
+              visibility: 'off',
+            },
+          ],
+        },
       ],
       zoomControl: false,
       mapTypeControl: false,
       streetViewControl: false,
       rotateControl: false,
       scaleControl: false,
-      fullscreenControl: false
+      fullscreenControl: false,
     }}
     defaultZoom={9}
     defaultCenter={{ lat: 33.96, lng: -118.2 }}
@@ -135,10 +135,12 @@ const Map = compose(
   </GoogleMap>
 ))
 
-const MapComponent = () => <div
-  style={{ backgroundColor: `#9BD1FF`, height: `520px`, maxHeight: `66vw` }}
->
-  <Map />
-</div>;
+const MapComponent = () => (
+  <div
+    style={{ backgroundColor: `#9BD1FF`, height: `520px`, maxHeight: `66vw` }}
+  >
+    <Map />
+  </div>
+)
 
-export default MapComponent;
+export default MapComponent

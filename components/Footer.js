@@ -16,13 +16,15 @@ const Content = styled.footer`
 	`};
 `
 
-const Footer = () => <Row>
-  <Column>
-    <Content>
-      Copyright &copy; {new Date().getFullYear()} Sage, a project of Impact
-      Philanthropy Group (EIN: 82-4614872)
-    </Content>
-  </Column>
-</Row>;
+const Footer = () => (
+  <Row>
+    <Column>
+      <Content>
+        Copyright &copy; {new Date().getFullYear()} Sage, a project of Impact
+        Philanthropy Group (EIN: 82-4614872)
+      </Content>
+    </Column>
+  </Row>
+)
 
-export default Footer;
+export default Footer

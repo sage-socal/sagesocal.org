@@ -30,7 +30,7 @@ const PageLink = withRouter(styled.a`
   margin: 0px;
   color: ${blue};
   border-bottom: none;
-  background-image: ${props =>
+  background-image: ${(props) =>
     props.active
       ? `linear-gradient(-100deg, rgba(255, 255, 255, 0), ${tint(
           0.75,
@@ -52,29 +52,31 @@ const Logo = ({ url }) => (
   />
 )
 
-const Navigation = ({ logo, pages, active }) => <Header>
-  <Link href="/who" prefetch>
-    <a>
-      <Logo url={logo} />
-    </a>
-  </Link>
-  <NavBar>
-    {pages.map(page => (
-      <Link
-        key={page.path}
-        href={page.path}
-        prefetch={!page.external}
-        passHref
-      >
-        <PageLink
-          target={page.external ? `_blank` : `_self`}
-          active={page.path === '/' + active}
+const Navigation = ({ logo, pages, active }) => (
+  <Header>
+    <Link href="/who" prefetch>
+      <a>
+        <Logo url={logo} />
+      </a>
+    </Link>
+    <NavBar>
+      {pages.map((page) => (
+        <Link
+          key={page.path}
+          href={page.path}
+          prefetch={!page.external}
+          passHref
         >
-          {page.title}
-        </PageLink>
-      </Link>
-    ))}
-  </NavBar>
-</Header>;
+          <PageLink
+            target={page.external ? `_blank` : `_self`}
+            active={page.path === '/' + active}
+          >
+            {page.title}
+          </PageLink>
+        </Link>
+      ))}
+    </NavBar>
+  </Header>
+)
 
-export default Navigation;
+export default Navigation
