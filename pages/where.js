@@ -132,34 +132,6 @@ const Where = () => (
           </Paragraph>
         </Column>
       </CenterSection>
-      <CenterSection>
-        <Column>
-          <LargeHeading style={{ textAlign: 'center' }}>
-            Torrance Unified School District
-          </LargeHeading>
-        </Column>
-        <Column md={6} lg={4} style={{ textAlign: 'center' }}>
-          <FitImage style={{ maxWidth: 300 }} src="/static/images/tusd.png" />
-        </Column>
-        <Column md={6} lg={8}>
-          <Paragraph>
-            <b>Torrance Unified School District</b> was established in 1947 and
-            unified in 1948. Torrance Unified School District is nestled in the
-            heart of the South Bay, in the south-western part of Los Angeles
-            County. TUSD is bordered by the Palos Verdes Peninsula on the south,
-            the beach cities - Redondo, Hermosa, and Manhattan Beach - to the
-            west, and cities of Lawndale and Hawthorne to the north. The
-            District serves the entire City of Torrance and is governed by five
-            school board members. students.
-          </Paragraph>
-          <Paragraph>
-            TUSD strives to ensure that each and every student is educated and
-            prepared to succeed in life. We are dedicated to maximizing
-            individual potential and developing lifelong learners who will be
-            contributing members in a global society.
-          </Paragraph>
-        </Column>
-      </CenterSection>
     </PageSegment>
   </Base>
 )
