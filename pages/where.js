@@ -21,35 +21,6 @@ const Where = () => (
       <CenterSection>
         <Column>
           <LargeHeading style={{ textAlign: 'center' }}>
-            South Pasadena Unified School District
-          </LargeHeading>
-        </Column>
-        <Column md={6} lg={4} style={{ textAlign: 'center' }}>
-          <FitImage
-            style={{ maxWidth: 300 }}
-            src="/static/images/south-pasadena.jpg"
-          />
-        </Column>
-        <Column md={6} lg={8}>
-          <Paragraph>
-            Established in 1886, the{' '}
-            <b>South Pasadena Unified School District</b> serves approximately
-            4,800 students within five schools including three elementary
-            schools, one middle school and one comprehensive high school. 
-            Nestled in the West San Gabriel Valley, SPUSD has earned a
-            reputation for providing high quality public education, attracting
-            families who value challenging academic programs and outstanding
-            teachers. Consistently recognized for superior performance, SPUSD
-            students earn honors at the local, state and national level.  The
-            District draws vital support from parents and community members
-            through the South Pasadena Educational Foundation, local PTAs and
-            booster clubs. 
-          </Paragraph>
-        </Column>
-      </CenterSection>
-      <CenterSection>
-        <Column>
-          <LargeHeading style={{ textAlign: 'center' }}>
             Pasadena Unified School District
           </LargeHeading>
         </Column>
