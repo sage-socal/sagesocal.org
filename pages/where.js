@@ -103,6 +103,32 @@ const Where = () => (
           </Paragraph>
         </Column>
       </CenterSection>
+      <CenterSection>
+        <Column>
+          <LargeHeading style={{ textAlign: 'center' }}>
+            El Camino Real Charter High School
+          </LargeHeading>
+        </Column>
+        <Column md={6} lg={4}>
+          <FitImage src="/static/images/el-camino.jpg" />
+        </Column>
+        <Column md={6} lg={8}>
+          <Paragraph>
+            <b>El Camino Real Charter High School</b> is an independent charter
+            school located in Woodland Hills. The school, founded in 1969, is
+            designed to emulate a small college campus, with a large central
+            "quad" and an open campus policy.
+          </Paragraph>
+          <Paragraph>
+            Over the years, El Camino has gained a reputation of excellence in
+            academics, athletics, and activities. The programs have won
+            countless awards including Academic Decathlon National Titles, CIF
+            Athletic Championships, and Performing Arts victories. In 2009, El
+            Camino was named a California Distinguished School by the California
+            Department of Education.
+          </Paragraph>
+        </Column>
+      </CenterSection>
     </PageSegment>
   </Base>
 )
