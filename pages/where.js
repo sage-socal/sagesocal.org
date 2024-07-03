@@ -129,26 +129,6 @@ const Where = () => (
           </Paragraph>
         </Column>
       </CenterSection>
-      <CenterSection>
-        <Column>
-          <LargeHeading style={{ textAlign: 'center' }}>
-            Village Charter Academy
-          </LargeHeading>
-        </Column>
-        <Column md={6} lg={4}>
-          <FitImage src="/static/images/village-charter.jpg" />
-        </Column>
-        <Column md={6} lg={8}>
-          <Paragraph>
-            <b>Village Charter Academy</b> is a TK through 5th grade independent
-            charter school located in Canoga Park, CA. The curriculum allows
-            students to be immersed in the Core Knowledge Sequence while
-            addressing the Common Core State Standards (CCSS). This core
-            instruction, along with the integration of the arts and technology
-            ensures that all students receive a rich instructional program.{' '}
-          </Paragraph>
-        </Column>
-      </CenterSection>
     </PageSegment>
   </Base>
 )
