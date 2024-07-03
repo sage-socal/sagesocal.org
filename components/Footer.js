@@ -20,8 +20,7 @@ const Footer = () => (
   <Row>
     <Column>
       <Content>
-        Copyright &copy; {new Date().getFullYear()} Sage, a project of Impact
-        Philanthropy Group (EIN: 82-4614872)
+        Copyright &copy; {new Date().getFullYear()} Sage Socal, Inc. (EIN: 99-1871717)
       </Content>
     </Column>
   </Row>
