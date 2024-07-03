@@ -183,8 +183,7 @@ const Who = () => (
             partners with over 70 schools in the San Francisco Bay Area to
             provide comprehensive mental health services. In the fall of 2017,
             Liz Schoeben decided to replicate the CASSY model to serve
-            communities in Southern California by creating Sage, a project of
-            Impact Philanthropy Group.
+            communities in Southern California by creating Sage.
           </WhiteParagraph>
         </Column>
       </BlueSection>
