@@ -95,29 +95,29 @@ const ContactComponent = () => (
       </Blurb>
       <Blurb>
         <Column md={4} lg={2}>
-          <CircleImage src="/static/images/liz-schoeben.jpg" />
+          <CircleImage src="/static/images/kathi-colli.jpg" />
         </Column>
         <Column md={6} lg={6}>
-          <Person primary>Liz Schoeben, MFT</Person>
+          <Person primary>Kathi Colli, LMFT</Person>
           <PersonTitle primary>Executive Director</PersonTitle>
           <Contact primary>
-            lizschoeben@sagesocal.org
+            kathicolli@sagesocal.org
             <br />
-            (650) 799-5266
+            (424) 262-0896
           </Contact>
         </Column>
       </Blurb>
       <Blurb>
         <Column md={4} lg={2}>
-          <CircleImage src="/static/images/kathi-colli.jpg" />
+          <CircleImage src="/static/images/liz-schoeben.jpg" />
         </Column>
         <Column md={6} lg={6}>
-          <Person primary>Kathi Colli, MFT</Person>
-          <PersonTitle primary>Clinical Director</PersonTitle>
+          <Person primary>Liz Schoeben, LMFT</Person>
+          <PersonTitle primary>Founder/Strategic Advisor</PersonTitle>
           <Contact primary>
-            kathicolli@sagesocal.org
+            lizschoeben@sagesocal.org
             <br />
-            (424) 262-0896
+            (650) 799-5266
           </Contact>
         </Column>
       </Blurb>
