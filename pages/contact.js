@@ -122,6 +122,36 @@ const ContactComponent = () => (
         </Column>
       </Blurb>
       <Blurb>
+        <Column md={6} lg={6}>
+          <Person primary>Erica Smith, PhD, LMFT</Person>
+          <PersonTitle primary>Clinical Supervisor</PersonTitle>
+          <Contact primary>
+            esmith@lcusd.net
+          </Contact>
+        </Column>
+      </Blurb>
+      <Blurb>
+        <Column md={4} lg={2}>
+          <CircleImage src="/static/images/sari.jpg" />
+        </Column>
+        <Column md={6} lg={6}>
+          <Person primary>Sari Yoshioka, LCSW</Person>
+          <PersonTitle primary>Clinical Supervisor</PersonTitle>
+          <Contact primary>
+            sari@sagesocal.org
+          </Contact>
+        </Column>
+      </Blurb>
+      <Blurb>
+        <Column md={6} lg={6}>
+          <Person primary>Monica Dessert, LMFT</Person>
+          <PersonTitle primary>Clinical Supervisor</PersonTitle>
+          <Contact primary>
+            monicadessert@sagesocal.org
+          </Contact>
+        </Column>
+      </Blurb>
+      <Blurb>
         <Column lg={8}>
           <SectionTitle>Follow us</SectionTitle>
           <BigParagraph>
