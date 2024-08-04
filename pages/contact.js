@@ -116,8 +116,6 @@ const ContactComponent = () => (
           <PersonTitle primary>Founder/Strategic Advisor</PersonTitle>
           <Contact primary>
             lizschoeben@sagesocal.org
-            <br />
-            (650) 799-5266
           </Contact>
         </Column>
       </Blurb>
