@@ -119,18 +119,6 @@ const ContactComponent = () => (
           </Contact>
         </Column>
       </Blurb>
-	<Blurb>
-	<Column md={4} lg={2}>
-          <CircleImage src="/static/images/monica-dessert.jpg" />
-        </Column>
-        <Column md={6} lg={6}>
-          <Person primary>Monica Dessert, LMFT</Person>
-          <PersonTitle primary>Clinical Supervisor</PersonTitle>
-          <Contact primary>
-            monicadessert@sagesocal.org
-          </Contact>
-        </Column>
-      </Blurb>
       <Blurb>
         <Column md={4} lg={2}>
           <CircleImage src="/static/images/erica-smith.jpg" />
