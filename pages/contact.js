@@ -121,13 +121,13 @@ const ContactComponent = () => (
       </Blurb>
       <Blurb>
         <Column md={4} lg={2}>
-          <CircleImage src="/static/images/erica-smith.jpg" />
+          <CircleImage src="/static/images/linda.jpg" />
         </Column>
         <Column md={6} lg={6}>
-          <Person primary>Erica Smith, PhD, LMFT</Person>
+          <Person primary>Linda Abdelsayed, LMFT</Person>
           <PersonTitle primary>Clinical Supervisor</PersonTitle>
           <Contact primary>
-            esmith@lcusd.net
+            lindaabdelsayed@sagesocal.org
           </Contact>
         </Column>
       </Blurb>
